@@ -55,3 +55,57 @@ canvas{
     position: absolute;
     z-index: -1;
 }
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px){
+    /*fundo do site*/
+    body{
+        overflow: hidden;
+        width: 412px;
+    }
+    
+    .pergunta{
+        border: 0;
+        border-radius: 5px;
+        background: transparent;
+        font-size: 40px;
+        outline: none;
+        margin-top: -600px;
+        margin-left: -100px;
+        width: 200px;
+        text-align: center;
+        resize: none;
+    }
+
+    /*Botoes*/
+    button{
+        border: 0;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        width: 70px;
+        height: 40px;
+        color: #fff;
+        top: 400px;
+        position: absolute;
+    }
+
+    /*Botão sim*/
+    button#btnSim{
+        background: #002060;
+        left: 0px;
+    }
+
+    /*Botão não*/
+    button#btnNao{
+        background: #b3001f;
+        right: 100px;
+    }
+
+    canvas{
+        position: absolute;
+        z-index: -1;
+        width: 50px;
+    }
+}

@@ -4,20 +4,27 @@ window.onload = function(){//EFEITO MAQUINA DE ESCREVER
   var speed = 100;
   var cont = 0;
 
-  function typeWriter () {
-    if(cont < txtTitulo.length){
-      txt1.innerHTML += "<u>" + txtTitulo.charAt(cont) + "</u>";
-      cont++;
-      setTimeout(typeWriter, speed);
-     }else{
-       cont = 0;
-     }
-    }
+  const delay = (delayInms) => {
+    return new Promise(resolve => setTimeout(resolve, delayInms));
+  }
+  
 
-   typeWriter();
+  async function typeWriter () {
+      if(cont < txtTitulo.length){
+        txt1.innerHTML += txtTitulo.charAt(cont) + "<a class='barra-escrita'>|<a>";
+        cont++;
+        setTimeout(typeWriter, speed);
+        if(cont < txtTitulo.length){
+          let delayres = await delay(100);
+          txt1.innerHTML = txt1.innerHTML.replace("|", "")
+        }
+      }else{
+        cont = 0;
+      }
+      }
+
+    typeWriter();
 };
-
-
 //EFEITO APARECER
 window.addEventListener("scroll", () => {
 

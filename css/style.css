@@ -49,20 +49,35 @@ footer
 }
 .svg-footer:hover, .link-footer:hover .svg-footer
 {/*Animar imagem do footer*/
-    transform: translatey(-15px);
+    transform: translatey(-15px) rotate(360deg);
 }
 /* Footer */
 
 #titulo/*Nome no header*/
 {
-    font-family: Rockwell;
+    font-family: Rockwell, Arial;
     color: #fff!important;
     text-decoration: none!important;
-    -webkit-text-fill-color: transparent;
-    background-color: #fff;
-    -webkit-background-clip: text;
+    color: #fff;
     font-weight: 700!important;
     font-size: 50px!important;
+}
+
+.barra-escrita{
+    color: #fff;
+    text-decoration: none;
+    animation: barra-animation 0.4s alternate infinite;
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    user-select: none;
+}
+
+@keyframes barra-animation {
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: transparent;
+    }
 }
 
 .bg-blue
@@ -223,7 +238,7 @@ h1.titulo
 .img-sobre
 {
     border-radius: 200px;
-    filter: drop-shadow(30px 10px 4px #080808);
+    filter: drop-shadow(30px 10px 10px #00000069)
 }
 
 .enviar {

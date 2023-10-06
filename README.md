@@ -2,4 +2,5 @@
 
 Hospedagem do Meu Portfólio <a href="https://joaoenrique.github.io/">https://joaoenrique.github.io/</a>
 
-![Portfólio](https://user-images.githubusercontent.com/87030375/158403410-47a66e60-b56b-4acc-be5f-3dcd31e4287f.png)
+![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/cdb04f3b-aaff-4e9f-8523-9ee39543f840)
+

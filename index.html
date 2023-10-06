@@ -6,6 +6,7 @@
     <title>João Enrique - Portifólio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="img/joao.png" type="image/x-icon">
 </head>
 <body>
     <section>
@@ -23,41 +24,52 @@
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav flex-grow-1 pe-3">
+                    <!-- 
+                        Button nos links para fechar menu ao clicar no link
+                     -->
+
                     <!-- HOME -->
-                    <li class="nav-item">
-                      <a class="nav-link" id="link-home" aria-current="page" href="#home">
-                        <div class="col col-img-link">
-                            <img src="img/home.png" height="40px" alt="" srcset="">
-                        </div>
-                        <div class="col">
-                            Home
-                        </div>
-                      </a>
-                    </li>
+                    <button class="navbar-toggler" style="border: 0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-home" aria-current="page" href="#home">
+                              <div class="col col-img-link">
+                                  <img src="img/home.png" height="40px" alt="" srcset="">
+                              </div>
+                              <div class="col">
+                                  Home
+                              </div>
+                            </a>
+                          </li>
+                    </button>
 
                     <!-- TECNOLOGIAS -->
-                    <li class="nav-item">
-                      <a class="nav-link" id="link-tecnologias" href="#tecnologias">
-                        <div class="col col-img-link">
-                            <img src="img/programacao.png" height="40px" alt="" srcset="">
-                        </div>
-                        <div class="col">
-                            Tecnologias
-                        </div>
-                      </a>
-                    </li>
+                    <button class="navbar-toggler" style="border: 0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <li class="nav-item">
+                        <a class="nav-link" id="link-tecnologias" href="#tecnologias">
+                            <div class="col col-img-link">
+                                <img src="img/programacao.png" height="40px" alt="" srcset="">
+                            </div>
+                            <div class="col">
+                                Tecnologias
+                            </div>
+                        </a>
+                        </li>
+                    </button>
                     
                     <!-- PROJETOS -->
-                    <li class="nav-item">
-                      <a class="nav-link" id="link-projetos" href="#projetos">
-                        <div class="col col-img-link">
-                            <img src="img/projetos.png" height="40px" alt="" srcset="">
-                        </div>
-                        <div class="col">
-                            Projetos
-                        </div>
-                      </a>
-                    </li>
+                    <button class="navbar-toggler" style="border: 0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-projetos" href="#projetos">
+                                <div class="col col-img-link">
+                                    <img src="img/projetos.png" height="40px" alt="" srcset="">
+                                </div>
+                                <div class="col">
+                                    Projetos
+                                </div>
+                            </a>
+                        </li>
+                    </button>
+
                   </ul>
                 </div>
               </div>
@@ -122,10 +134,10 @@
         <!-- CARROUSEL LINGUAGENS -->
         <div class="container carousel">
             <button class="arrow-left control" aria-label="Previous image">
-                <svg class="arrow-carrousel" fill="#000" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>
+                <svg class="arrow-carrousel" fill="#fff" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>
             </button>
             <button class="arrow-right control" aria-label="Next Image">
-                <svg class="arrow-carrousel" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>
+                <svg class="arrow-carrousel" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>
             </button>
             <div class="gallery-wrapper">
               <div class="gallery">
@@ -197,10 +209,10 @@
         <h1 style="margin-top: 50px;">Tecnologias</h1>
         <div class="container carousel">
             <button class="arrow-left control" aria-label="Previous image">
-                <svg class="arrow-carrousel" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill="#000"><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>
+                <svg class="arrow-carrousel" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill="#fff"><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>
             </button>
             <button class="arrow-right control" aria-label="Next Image">
-                <svg class="arrow-carrousel" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>
+                <svg class="arrow-carrousel" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>
             </button>
             <div class="gallery-wrapper">
               <div class="gallery">
@@ -286,12 +298,13 @@
 
         <div class="container">
             <div class="row" style="align-items: stretch!important;">
-                <p style="color: #fff; font-size: 20px;">Clique nas imagens para ter mais informações</p>
-                
+                <p style="color: #fff; font-size: 20px;">Clique nas imagens para ter mais informações. É possível ver alguns projetos em produção</p>
+
                 <!-- CARD JARVIS -->
                 <div class="col-sm-6 mt-4" data-aos="fade-left">
                     <div class="card card-experiencia">
                         <video class="" src="https://rr2---sn-bg0eznsr.c.drive.google.com/videoplayback?expire=1696608769&ei=0QcgZZKNAcOPxtYPxL6y-AE&ip=45.184.165.232&id=91ca9df74dfb14b7&itag=22&source=webdrive&requiressl=yes&xpc=EghotM6WJ3oBAQ==&mh=s9&mm=32&mn=sn-bg0eznsr&ms=su&mv=m&mvi=2&pl=24&sc=yes&ttl=transient&susc=dr&driveid=1j3woRjbTWOScUq_risaAXgFKMk1Xwn2N&app=explorer&eaua=3mympojr-Ug&mime=video/mp4&vprv=1&prv=1&dur=76.858&lmt=1696597631319184&mt=1696597495&subapp=DRIVE_WEB_FILE_VIEWER&txp=0006224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,eaua,mime,vprv,prv,dur,lmt&sig=AGM4YrMwRgIhAL_sbqfLHKJrr34_AsKXkCP8Qq-IoqWnp24trNxaNhFXAiEAkvIZ-IVQ2TdN1d4T764RWGPrB3m1Xcdl7mbuVvfkBNQ=&lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&lsig=AK1ks_kwRAIgdfjmGvnP5N17cvLYbjlnZH-U436epy0Yx5jljQr0JvQCIFfGl9JuGyZIFwNr2h4uudz6ylellYoAXdsCgJgM7gVi&cpn=2NQNmHxMhfgXX6wS&c=WEB_EMBEDDED_PLAYER&cver=1.20231003.01.00" controls></video>
+                        <!-- <iframe src="https://drive.google.com/file/d/1j3woRjbTWOScUq_risaAXgFKMk1Xwn2N/preview" width="640" height="480" allow="autoplay"></iframe> -->
                         <div class="card-body">
                             <h5>Braço robótico com comando de voz. Assistente virtual</h5>
                             <p>Python e Arduino - C++</p>

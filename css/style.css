@@ -806,7 +806,7 @@ section:nth-child(even){
     width: 40px;
     color: #fff;
     transition: all 600ms ease-in-out;
-    background: linear-gradient(to left, transparent 0%, #00000052 200%);
+    background: linear-gradient(to left, transparent 0%, #ffffff52 200%);
     /* opacity: 0.1; */
     cursor: pointer;
     border: none;
@@ -819,18 +819,18 @@ section:nth-child(even){
   
   
 .arrow-right:hover {
-    background: linear-gradient(to right, transparent 0%, black 200%);
+    background: linear-gradient(to right, transparent 0%, #fff 200%);
 }
 
 .arrow-left:hover{
-    background: linear-gradient(to left, transparent 0%, black 200%);
+    background: linear-gradient(to left, transparent 0%, #fff 200%);
 }
   
   .arrow-right {
     right: 0;
     left: auto;
     text-align: right;
-    background: linear-gradient(to right, transparent 0%, #00000052 200%);
+    background: linear-gradient(to right, transparent 0%, #ffffff52 200%);
   }
   
   .gallery {

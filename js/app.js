@@ -143,29 +143,34 @@ window.addEventListener("scroll", () => {
 // }
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('.nav-link');
+document.addEventListener('DOMContentLoaded', function () {
+  // Function to initialize carousels
+  function initCarousel(carousel) {
+      const controls = carousel.querySelectorAll(".control");
+      let currentItem = 0;
+      const items = carousel.querySelectorAll(".card-tecnologies");
+      const maxItems = items.length;
 
-  window.addEventListener('scroll', () => {
-    let current = '';
+      controls.forEach((control) => {
+          control.addEventListener("click", (e) => {
+              const isLeft = e.target.classList.contains("arrow-left");
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
+              if (isLeft) {
+                  currentItem = (currentItem - 1 + maxItems) % maxItems;
+              } else {
+                  currentItem = (currentItem + 1) % maxItems;
+              }
 
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute('id');
-      }
-    });
+              items[currentItem].scrollIntoView({
+                  behavior: "smooth",
+                  inline: "center",
+              });
+          });
+      });
+  }
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href').slice(1) === current) {
-        link.classList.add('active');
-      }
-    });
-  });
+  // Initialize each carousel on the page
+  document.querySelectorAll(".carousel").forEach(initCarousel);
 });
 
 

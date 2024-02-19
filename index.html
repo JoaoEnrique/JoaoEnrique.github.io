@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <link rel="shortcut icon" href="img/joao.png" type="image/x-icon">
+
+    
+    <script src="node_modules/@splidejs\splide\dist/js/splide.js"></script><!-- Link to the file hosted on your server, -->
+    <link rel="stylesheet" href="node_modules\@splidejs\splide\dist\css\splide.min.css">
+    <link rel="stylesheet" href="node_modules\@splidejs\splide\dist\css\splide.min.css">
 </head>
 <body>
+    
     <section>
         <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
             <!-- bg-dark -->
@@ -120,20 +126,82 @@
         </div>
 
         <!-- SETA PARA DESCER -->
-        <a class="link-descer" href="#sobre">
+        <a class="link-descer" href="#habilidades">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
             </svg>
         </a>
     </section>
 
-    <section id="tecnologias">
+    <section class="screen" id="habilidades">
+        <h1>Habilidades</h1>
 
-        <h1>Linguagens</h1>
+        <!-- CARROUSEL LINGUAGENS -->
+        <div class="container" style="display: flex; flex-wrap: wrap; margin-top: -200px; justify-content: space-between;">
+            
+            <div class="card-body card-skills">
+                <p class="title-languages">Front-End</p>
+                <p class="text-languages">Conhecimento em HTML, CSS, JavaScript e Bootstrap</p>
+            </div>
+            
+            <div class="card-body card-skills">
+                <p class="title-languages">Back-End</p>
+                <p class="text-languages">Conhecimento em Laravel, PHP, Python, C++, e C# para Unity</p>
+            </div>
+            
+            <div class="card-body card-skills">
+                <p class="title-languages">IoT</p>
+                <p class="text-languages">Programação de dispositivos inteligentes com Esp32/Esp8266</p>
+            </div>
+
+            <div class="card-body card-skills">
+                <p class="title-languages">Unity / RA</p>
+                <p class="text-languages">Aplicativos em Realidade Aumentada com Unity e C#</p>
+            </div>
+
+            <div class="card-body card-skills">
+                <p class="title-languages">Banco de Dados</p>
+                <p class="text-languages">Conhecimento em Banco de Dados relacional</p>
+            </div>
+
+            <div class="card-body card-skills">
+                <p class="title-languages">Android</p>
+                <p class="text-languages">Conhecimento em React Native Expo e Kotlin/Compose</p>
+            </div>
+        </div>
+    </section>
+
+
+      <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            // Inicialize o primeiro carrossel
+            var splideOne = new Splide('#splideOne', {
+                type: 'loop',
+                perPage: 6,
+                focus: 'center',
+            });
+
+            // Inicialize o segundo carrossel
+            var splideTwo = new Splide('#splideTwo', {
+                type: 'loop',
+                perPage: 6,
+                focus: 'center',
+            });
+
+            // Monte ambos os carrosséis
+            splideOne.mount();
+            splideTwo.mount();
+        });
+      </script>
+
+
+    <section class="screen" id="tecnologias">
+        <h1 style="margin-top: -50px;">Linguagens</h1>
 
         <!-- CARROUSEL LINGUAGENS -->
         <div class="container carousel">
-            <button class="arrow-left control" aria-label="Previous image">
+            
+            <!-- <button class="arrow-left control" aria-label="Previous image">
                 <svg class="arrow-carrousel" fill="#fff" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>
             </button>
             <button class="arrow-right control" aria-label="Next Image">
@@ -201,104 +269,202 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+
+        <section class="splide" id="splideOne" aria-label="Splide 1">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="card card-tecnologies current-item">
+                            <div class="card-body card-body-languages">
+                                <img class="img-languages" src="img/icons/php.png" alt="" srcset="">
+                                <p class="title-languages">PHP</p>
+                                <p class="text-languages">Lingauem web back-end</p>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <li class="splide__slide">
+                        <div class="card card-tecnologies current-item">
+                            <div class="card-body card-body-languages">
+                                <div class="div-img-languages">
+                                    <img class="img-languages" height="60px" src="img/icons/html.png" alt="" srcset="">
+                                    <img class="img-languages" height="60px" src="img/icons/css.png" alt="" srcset="">
+                                    <img class="img-languages" height="60px" src="img/icons/js.png" alt="" srcset="">
+                                </div>
+                                <p class="title-languages">HTML - CSS - JS</p>
+                                <p class="text-languages">linguagens Web front-end</p>
+                            </div>
+                        </div>
+                    </li>
+                        
+                    <li class="splide__slide">
+                        <div class="card card-tecnologies current-item">
+                            <div class="card-body card-body-languages">
+                                <img class="img-languages" src="img/icons/sql.png" alt="" srcset="">
+                                <p class="title-languages">SQL</p>
+                                <p class="text-languages">Lingauem para banco de dados</p>
+                            </div>
+                        </div>
+                    </li>
+                        
+                    <li class="splide__slide">
+                        <div class="card card-tecnologies current-item">
+                            <div class="card-body card-body-languages">
+                                <img class="img-languages" src="img/icons/kotlin.png" alt="" srcset="">
+                                <p class="title-languages">Kotlin</p>
+                                <p class="text-languages">linguagem Mobile</p>
+                            </div>
+                        </div>
+                    </li>
+                        
+                    <li class="splide__slide">
+                        <div class="card card-tecnologies current-item">
+                            <div class="card-body card-body-languages">
+                                <img class="img-languages" src="img/icons/python.png" alt="" srcset="">
+                                <p class="title-languages">Python</p>
+                                <p class="text-languages">linguagem multiplataforma</p>
+                            </div>
+                        </div>
+                    </li>
+                        
+                    <li class="splide__slide">
+                        <div class="card card-tecnologies current-item">
+                            <div class="card-body card-body-languages">
+                                <img class="img-languages" src="img/icons/c++png.png" alt="" srcset="">
+                                <p class="title-languages">C++ Arduino</p>
+                                <p class="text-languages">c++ para sistemas embarcados</p>
+                            </div>
+                        </div>
+                    </li>
+                        
+                    <li class="splide__slide">
+                        <div class="card card-tecnologies current-item">
+                            <div class="card-body card-body-languages">
+                                <img class="img-languages" src="img/icons/c-sharp.png" alt="" srcset="">
+                                <p class="title-languages">C# Unity</p>
+                                <p class="text-languages">c# para Unity</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
+        
+    
           
     
     <!-- CARROUSEL TECNOLOGIAS -->
-        <h1 style="margin-top: 50px;">Tecnologias</h1>
+        <h1 style="margin-top: 0px;">Tecnologias</h1>
         <div class="container carousel">
-            <button class="arrow-left control" aria-label="Previous image">
-                <svg class="arrow-carrousel" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill="#fff"><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>
-            </button>
-            <button class="arrow-right control" aria-label="Next Image">
-                <svg class="arrow-carrousel" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>
-            </button>
-            <div class="gallery-wrapper">
-              <div class="gallery">
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-tecnologies">
-                        <img class="img-tecnologies" src="img/icons/laravel.png" alt="" srcset="">
-                        <p class="title-tecnologie">Laravel</p>
-                        <p class="text-tecnologie">Framework PHP</p>
-                    </div>
-                </div>
-
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-tecnologies">
-                        <img class="img-tecnologies" src="img/icons/bootstrap.png" alt="" srcset="">
-                        <p class="title-tecnologie">Bootstrap</p>
-                        <p class="text-tecnologie">Framework web front-end</p>
-                    </div>
-                </div>
+            <section class="splide" id="splideTwo" aria-label="Splide 2">
                 
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-tecnologies">
-                        <img class="img-tecnologies" src="img/icons/unity.png" alt="" srcset="">
-                        <p class="title-tecnologie">Unity</p>
-                        <p class="text-tecnologie">Aplicativos em Realidade Aumentada</p>
-                    </div>
-                </div>
-                
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-tecnologies">
-                        <img class="img-tecnologies" src="img/icons/mysql.png" alt="" srcset="">
-                        <p class="title-tecnologie">MySQL</p>
-                        <p class="text-tecnologie">SGBD para banco de dados</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-tecnologies">
-                        <img class="img-tecnologies" src="img/icons/git.png" alt="" srcset="">
-                        <p class="title-tecnologie">Git</p>
-                        <p class="text-tecnologie">Sistema de controle de versão</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-tecnologies">
-                        <img class="img-tecnologies" src="img/icons/arduino.png" alt="" srcset="">
-                        <p class="title-tecnologie">Arduino</p>
-                        <p class="text-tecnologie">Sistemas embarcados</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-tecnologies">
-                        <img class="img-tecnologies" src="img/icons/iot.png" alt="" srcset="">
-                        <p class="title-tecnologie">IoT</p>
-                        <p class="text-tecnologie">Internet das Coisas</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-tecnologies">
-                        <img class="img-tecnologies" src="img/icons/redes.png" alt="" srcset="">
-                        <p class="title-tecnologie">Redes</p>
-                        <p class="text-tecnologie">Rede de computadores</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-tecnologies">
-                        <img class="img-tecnologies" src="img/icons/trello.png" alt="" srcset="">
-                        <p class="title-tecnologie">Trello</p>
-                        <p class="text-tecnologie">Gerenciamento de projeto baseado</p>
-                    </div>
-                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                          <div class="card card-tecnologies current-item">
+                              <div class="card-body card-body-tecnologies">
+                                  <img class="img-tecnologies" src="img/icons/laravel.png" alt="" srcset="">
+                                  <p class="title-tecnologie">Laravel</p>
+                                  <p class="text-tecnologie">Framework PHP</p>
+                              </div>
+                          </div>
+                        </li>
+      
+                        <li class="splide__slide">
+                          <div class="card card-tecnologies current-item">
+                              <div class="card-body card-body-tecnologies">
+                                  <img class="img-tecnologies" src="img/icons/bootstrap.png" alt="" srcset="">
+                                  <p class="title-tecnologie">Bootstrap</p>
+                                  <p class="text-tecnologie">Framework web front-end</p>
+                              </div>
+                          </div>
+                        </li>
+      
+                        <li class="splide__slide">
+                        <div class="card card-tecnologies current-item">
+                          <div class="card-body card-body-tecnologies">
+                              <img class="img-tecnologies" src="img/icons/unity.png" alt="" srcset="">
+                              <p class="title-tecnologie">Unity</p>
+                              <p class="text-tecnologie">Aplicativos em Realidade Aumentada</p>
+                          </div>
+                      </div>
+                  </li>
+                      
+                      
+                      <li class="splide__slide">
+                      <div class="card card-tecnologies current-item">
+                          <div class="card-body card-body-tecnologies">
+                              <img class="img-tecnologies" src="img/icons/mysql.png" alt="" srcset="">
+                              <p class="title-tecnologie">MySQL</p>
+                              <p class="text-tecnologie">SGBD para banco de dados</p>
+                          </div>
+                      </div>
+                  </li>
+                      
+                      <li class="splide__slide">
+                      <div class="card card-tecnologies current-item">
+                          <div class="card-body card-body-tecnologies">
+                              <img class="img-tecnologies" src="img/icons/git.png" alt="" srcset="">
+                              <p class="title-tecnologie">Git</p>
+                              <p class="text-tecnologie">Sistema de controle de versão</p>
+                          </div>
+                      </div>
+                  </li>
+                      
+                      <li class="splide__slide">
+                      <div class="card card-tecnologies current-item">
+                          <div class="card-body card-body-tecnologies">
+                              <img class="img-tecnologies" src="img/icons/arduino.png" alt="" srcset="">
+                              <p class="title-tecnologie">Arduino</p>
+                              <p class="text-tecnologie">Sistemas embarcados</p>
+                          </div>
+                      </div>
+                  </li>
+                      
+                      <li class="splide__slide">
+                      <div class="card card-tecnologies current-item">
+                          <div class="card-body card-body-tecnologies">
+                              <img class="img-tecnologies" src="img/icons/iot.png" alt="" srcset="">
+                              <p class="title-tecnologie">IoT</p>
+                              <p class="text-tecnologie">Internet das Coisas</p>
+                          </div>
+                      </div>
+                  </li>
+                      
+                      <li class="splide__slide">
+                      <div class="card card-tecnologies current-item">
+                          <div class="card-body card-body-tecnologies">
+                              <img class="img-tecnologies" src="img/icons/redes.png" alt="" srcset="">
+                              <p class="title-tecnologie">Redes</p>
+                              <p class="text-tecnologie">Rede de computadores</p>
+                          </div>
+                      </div>
+                  </li>
+                      
+                      <li class="splide__slide">
+                      <div class="card card-tecnologies current-item">
+                          <div class="card-body card-body-tecnologies">
+                              <img class="img-tecnologies" src="img/icons/trello.png" alt="" srcset="">
+                              <p class="title-tecnologie">Trello</p>
+                              <p class="text-tecnologie">Gerenciamento de projeto baseado</p>
+                          </div>
+                      </div>
+                  </li>
+                    </ul>
               </div>
-            </div>
+            </section>
           </div>
     </section>
 
-    <section id="projetos">
+    <section class="screen" id="projetos">
         <h1>Projetos</h1>
 
         <div class="container">
             <div class="row" style="align-items: stretch!important;">
-                <p style="color: #fff; font-size: 20px;">Clique nas imagens para ter mais informações. É possível ver alguns projetos em produção</p>
+                <p style="color: #fff; font-size: 20px;">Clique nas imagens para ter mais informações e visualizar mais imagens. É possível ver alguns projetos em produção</p>
 
                 <!-- CARD JARVIS -->
                 <div class="col-sm-6 mt-4" data-aos="fade-left">
@@ -307,7 +473,7 @@
                         <!-- <iframe src="https://drive.google.com/file/d/1j3woRjbTWOScUq_risaAXgFKMk1Xwn2N/preview" width="640" height="480" allow="autoplay"></iframe> -->
                         <div class="card-body">
                             <h5>Braço robótico com comando de voz. Assistente virtual</h5>
-                            <p>Python e Arduino - C++</p>
+                            <p>Python Arduino e C++</p>
                             <a target="_blank" href="https://photos.app.goo.gl/9JVPzG6hJBtV5s4v5" class="btn-experiencia btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
                                     <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />

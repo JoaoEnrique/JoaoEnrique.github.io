@@ -19,65 +19,6 @@
             <!-- bg-dark -->
             <div class="container-fluid">
               <a class="navbar-brand" href="#home">João Enrique</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav flex-grow-1 pe-3">
-                    <!-- 
-                        Button nos links para fechar menu ao clicar no link
-                     -->
-
-                    <!-- HOME -->
-                    <button class="navbar-toggler" style="border: 0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                        <li class="nav-item">
-                            <a class="nav-link" id="link-home" aria-current="page" href="#home">
-                              <div class="col col-img-link">
-                                  <img src="img/home.png" height="40px" alt="" srcset="">
-                              </div>
-                              <div class="col">
-                                  Home
-                              </div>
-                            </a>
-                          </li>
-                    </button>
-
-                    <!-- TECNOLOGIAS -->
-                    <button class="navbar-toggler" style="border: 0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                        <li class="nav-item">
-                        <a class="nav-link" id="link-tecnologias" href="#tecnologias">
-                            <div class="col col-img-link">
-                                <img src="img/programacao.png" height="40px" alt="" srcset="">
-                            </div>
-                            <div class="col">
-                                Tecnologias
-                            </div>
-                        </a>
-                        </li>
-                    </button>
-                    
-                    <!-- PROJETOS -->
-                    <button class="navbar-toggler" style="border: 0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                        <li class="nav-item">
-                            <a class="nav-link" id="link-projetos" href="#projetos">
-                                <div class="col col-img-link">
-                                    <img src="img/projetos.png" height="40px" alt="" srcset="">
-                                </div>
-                                <div class="col">
-                                    Projetos
-                                </div>
-                            </a>
-                        </li>
-                    </button>
-
-                  </ul>
-                </div>
-              </div>
             </div>
           </nav>
     </section>
@@ -140,12 +81,12 @@
             
             <div class="card-body card-skills">
                 <p class="title-languages">Front-End</p>
-                <p class="text-languages">Conhecimento em HTML, CSS, JavaScript e Bootstrap</p>
+                <p class="text-languages">Conhecimento em HTML, CSS, JavaScript, Bootstrap e Tailwind</p>
             </div>
             
             <div class="card-body card-skills">
                 <p class="title-languages">Back-End</p>
-                <p class="text-languages">Conhecimento em Laravel, PHP, Python, C++, e C# para Unity</p>
+                <p class="text-languages">Conhecimento em Laravel, PHP, Python, C++, Java, Node JS e C# para Unity</p>
             </div>
             
             <div class="card-body card-skills">
@@ -159,7 +100,7 @@
             </div>
 
             <div class="card-body card-skills">
-                <p class="title-languages">Banco de Dados</p>
+                <p class="title-languages">Banco de Dados MySQL</p>
                 <p class="text-languages">Conhecimento em Banco de Dados relacional</p>
             </div>
 
@@ -178,6 +119,7 @@
                 type: 'loop',
                 perPage: 6,
                 focus: 'center',
+                autoplay: true,
             });
 
             // Inicialize o segundo carrossel
@@ -185,6 +127,7 @@
                 type: 'loop',
                 perPage: 6,
                 focus: 'center',
+                autoplay: true,
             });
 
             // Monte ambos os carrosséis
@@ -199,77 +142,6 @@
 
         <!-- CARROUSEL LINGUAGENS -->
         <div class="container carousel">
-            
-            <!-- <button class="arrow-left control" aria-label="Previous image">
-                <svg class="arrow-carrousel" fill="#fff" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>
-            </button>
-            <button class="arrow-right control" aria-label="Next Image">
-                <svg class="arrow-carrousel" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>
-            </button>
-            <div class="gallery-wrapper">
-              <div class="gallery">
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-languages">
-                        <img class="img-languages" src="img/icons/php.png" alt="" srcset="">
-                        <p class="title-languages">PHP</p>
-                        <p class="text-languages">Lingauem web back-end</p>
-                    </div>
-                </div>
-
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-languages">
-                        <div class="div-img-languages">
-                            <img class="img-languages" height="60px" src="img/icons/html.png" alt="" srcset="">
-                            <img class="img-languages" height="60px" src="img/icons/css.png" alt="" srcset="">
-                            <img class="img-languages" height="60px" src="img/icons/js.png" alt="" srcset="">
-                        </div>
-                        <p class="title-languages">HTML - CSS - JS</p>
-                        <p class="text-languages">linguagens Web front-end</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-languages">
-                        <img class="img-languages" src="img/icons/sql.png" alt="" srcset="">
-                        <p class="title-languages">SQL</p>
-                        <p class="text-languages">Lingauem para banco de dados</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-languages">
-                        <img class="img-languages" src="img/icons/kotlin.png" alt="" srcset="">
-                        <p class="title-languages">Kotlin</p>
-                        <p class="text-languages">linguagem Mobile</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-languages">
-                        <img class="img-languages" src="img/icons/python.png" alt="" srcset="">
-                        <p class="title-languages">Python</p>
-                        <p class="text-languages">linguagem multiplataforma</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-languages">
-                        <img class="img-languages" src="img/icons/c++png.png" alt="" srcset="">
-                        <p class="title-languages">C++ Arduino</p>
-                        <p class="text-languages">c++ para sistemas embarcados</p>
-                    </div>
-                </div>
-                
-                <div class="card card-tecnologies current-item">
-                    <div class="card-body card-body-languages">
-                        <img class="img-languages" src="img/icons/c-sharp.png" alt="" srcset="">
-                        <p class="title-languages">C# Unity</p>
-                        <p class="text-languages">c# para Unity</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
 
         <section class="splide" id="splideOne" aria-label="Splide 1">
             <div class="splide__track">
@@ -288,12 +160,25 @@
                         <div class="card card-tecnologies current-item">
                             <div class="card-body card-body-languages">
                                 <div class="div-img-languages">
-                                    <img class="img-languages" height="60px" src="img/icons/html.png" alt="" srcset="">
-                                    <img class="img-languages" height="60px" src="img/icons/css.png" alt="" srcset="">
-                                    <img class="img-languages" height="60px" src="img/icons/js.png" alt="" srcset="">
+                                    <img class="img-languages" height="80px" src="img/icons/html.png" alt="" srcset="">
+                                    <img class="img-languages" height="80px" src="img/icons/css.png" alt="" srcset="">
                                 </div>
-                                <p class="title-languages">HTML - CSS - JS</p>
+                                <p class="title-languages">HTML - CSS</p>
                                 <p class="text-languages">linguagens Web front-end</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+        
+                    <li class="splide__slide">
+                        <div class="card card-tecnologies current-item">
+                            <div class="card-body card-body-languages">
+                                <div class="div-img-languages">
+                                    <img class="img-languages"  src="img/icons/js.png" alt="" srcset="">
+                                </div>
+                                <p class="title-languages">JS</p>
+                                <p class="text-languages">linguagens Web</p>
                             </div>
                         </div>
                     </li>
@@ -371,13 +256,33 @@
                               </div>
                           </div>
                         </li>
+
+                        <li class="splide__slide">
+                          <div class="card card-tecnologies current-item">
+                              <div class="card-body card-body-tecnologies">
+                                  <img class="img-tecnologies" src="img/icons/tailwind.svg"  height="100" width="">
+                                  <p class="title-tecnologie">Tailwind</p>
+                                  <p class="text-tecnologie">Framework CSS</p>
+                              </div>
+                          </div>
+                        </li>
       
                         <li class="splide__slide">
                           <div class="card card-tecnologies current-item">
                               <div class="card-body card-body-tecnologies">
-                                  <img class="img-tecnologies" src="img/icons/bootstrap.png" alt="" srcset="">
+                                  <img class="img-tecnologies" src="img/icons/bootstrap.png">
                                   <p class="title-tecnologie">Bootstrap</p>
-                                  <p class="text-tecnologie">Framework web front-end</p>
+                                  <p class="text-tecnologie">Framework CSS</p>
+                              </div>
+                          </div>
+                        </li>
+      
+                        <li class="splide__slide">
+                          <div class="card card-tecnologies">
+                              <div class="card-body card-body-tecnologies">
+                                  <img class="img-tecnologies" src="img/icons/node.png"  height="70" style="margin-top: 10px!important;">
+                                  <p class="title-tecnologie">Node JS</p>
+                                  <p class="text-tecnologie">Ferramenta KS</p>
                               </div>
                           </div>
                         </li>
@@ -468,7 +373,7 @@
                 <!-- CARD JARVIS -->
                 <div class="col-sm-6 mt-4" data-aos="fade-left">
                     <div class="card card-experiencia">
-                        <video class="" src="https://rr2---sn-bg0eznsr.c.drive.google.com/videoplayback?expire=1696608769&ei=0QcgZZKNAcOPxtYPxL6y-AE&ip=45.184.165.232&id=91ca9df74dfb14b7&itag=22&source=webdrive&requiressl=yes&xpc=EghotM6WJ3oBAQ==&mh=s9&mm=32&mn=sn-bg0eznsr&ms=su&mv=m&mvi=2&pl=24&sc=yes&ttl=transient&susc=dr&driveid=1j3woRjbTWOScUq_risaAXgFKMk1Xwn2N&app=explorer&eaua=3mympojr-Ug&mime=video/mp4&vprv=1&prv=1&dur=76.858&lmt=1696597631319184&mt=1696597495&subapp=DRIVE_WEB_FILE_VIEWER&txp=0006224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,eaua,mime,vprv,prv,dur,lmt&sig=AGM4YrMwRgIhAL_sbqfLHKJrr34_AsKXkCP8Qq-IoqWnp24trNxaNhFXAiEAkvIZ-IVQ2TdN1d4T764RWGPrB3m1Xcdl7mbuVvfkBNQ=&lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&lsig=AK1ks_kwRAIgdfjmGvnP5N17cvLYbjlnZH-U436epy0Yx5jljQr0JvQCIFfGl9JuGyZIFwNr2h4uudz6ylellYoAXdsCgJgM7gVi&cpn=2NQNmHxMhfgXX6wS&c=WEB_EMBEDDED_PLAYER&cver=1.20231003.01.00" controls></video>
+                        <video class="" src="img/jarvis.mp4" controls></video>
                         <!-- <iframe src="https://drive.google.com/file/d/1j3woRjbTWOScUq_risaAXgFKMk1Xwn2N/preview" width="640" height="480" allow="autoplay"></iframe> -->
                         <div class="card-body">
                             <h5>Braço robótico com comando de voz. Assistente virtual</h5>
@@ -487,27 +392,27 @@
                 <!-- CARD PACOCA  -->
                 <div class="col-sm-6 mt-4" data-aos="fade-left">
                     <div class="card card-experiencia">
-                        <div id="carouselPacoca" class="carousel slide">
+                        <div id="carouselPacoca" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
+                              <div class="carousel-item active" data-bs-interval="2000">
                                 <img class="d-block w-100" src="img/pacoca1.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Feed da Rede Social
                                 </div>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/pacoca2.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Página de Conta
                                 </div>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/pacoca3.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Publicações do usuário
                                 </div>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/pacoca4.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                    Seguir usuário
@@ -539,21 +444,21 @@
                 <!-- CARD SCIENCE AR  -->
                 <div class="col-sm-6 mt-4" data-aos="fade-left">
                     <div class="card card-experiencia">
-                        <div id="carouselScience" class="carousel slide">
+                        <div id="carouselScience" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
+                              <div class="carousel-item active" data-bs-interval="2000">
                                 <img class="d-block w-100" src="img/science-ar.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Progresso dos quizes <br> sobre ciências
                                 </div>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/science-ar2.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Página home
                                 </div>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/science-ar3.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Listagem dos quizzes
@@ -588,45 +493,45 @@
                     <div class="card card-experiencia">
                         <!-- <video class="" src="img/jarvis.mp4" controls></video> -->
 
-                        <div id="carouselExample" class="carousel slide">
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                  <img class="d-block w-100" src="img/mac.png" alt="" srcset="">
+                                  <div class="descricao-img-carousel">
+                                      Clonagem do Layout do sistema operacional MAC
+                                  </div>
+                                </div>
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/netflix.jpeg" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Clonagem do Layout do YouTube
                                 </div>
                               </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="img/facebook.jpeg" alt="" srcset="">
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="img/facebook.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Clonagem do Layout do facebook
                                 </div>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/filmes.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Filtro de filmes com JS
                                 </div>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/pessoa.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Gerador de Pessoas
                                 </div>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/gerador-texto.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Gerador de texto
                                 </div>
                               </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="img/mac.png" alt="" srcset="">
-                                <div class="descricao-img-carousel">
-                                    Clonagem do Layout do sistema operacional MAC
-                                </div>
-                              </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img class="d-block w-100" src="img/wallpaper.png" alt="" srcset="">
                                 <div class="descricao-img-carousel">
                                     Site de baixar wallpapers

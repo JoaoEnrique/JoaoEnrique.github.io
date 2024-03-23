@@ -2,10 +2,12 @@
 
 Hospedagem do Meu Portfólio <a href="https://joaoenrique.github.io/">https://joaoenrique.github.io/</a>
 
-![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/cdb04f3b-aaff-4e9f-8523-9ee39543f840)
+![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/b01e7548-c01a-48bb-9c3e-30d175c0d2d2)
 
-![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/2d649430-ce29-45d7-bbdc-3d3aaad58d7d)
+![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/751387c0-043c-4bf5-9bef-88c48986925f)
 
-![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/b799b0c6-4b23-461a-b5b0-a7f10aa640ea)
+![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/fad37549-7a49-4bd0-b63d-4bb88734ceee)
 
-![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/1c96d549-f237-406f-93a5-fbbe2cc307fd)
+![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/55efd3cb-383c-46fa-9887-5eb15258a699)
+
+![image](https://github.com/JoaoEnrique/JoaoEnrique.github.io/assets/87030375/d527bdc9-eb53-4fe8-a79e-be849d83ccba)

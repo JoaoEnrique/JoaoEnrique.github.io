@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function(){ 
   var txtTitulo = 'João Enrique Alves';
   var txt1 = document.getElementById("name");
   

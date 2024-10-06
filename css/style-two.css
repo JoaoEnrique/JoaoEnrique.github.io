@@ -696,7 +696,7 @@ section{
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
 
-#tecnologias, #projetos{
+#projetos{
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -714,13 +714,29 @@ section{
 }
 #tecnologias{
     background: #090a0f;
+    min-height: 100vh;
+    padding-top: 20px;
 }
 
 
-#tecnologias h1, #projetos h1, #habilidades h1{
+#projetos h1{
     text-align: center;
     font-size: 50px;
     padding: 40px 0 40px 0!important;
+    color: #fff;
+}
+
+#habilidades h1 {
+    text-align: center;
+    font-size: 50px;
+    /* padding: 40px 0 40px 0!important; */
+    color: #fff;
+}
+
+#tecnologias h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 70px 0 0px 0!important;
     color: #fff;
 }
 
@@ -736,7 +752,9 @@ section{
 
 .card-tecnologies{
     background: #1b2735!important;
-    height: 220px!important;
+    height: 230px!important;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .card-skills{
@@ -789,6 +807,10 @@ section{
     opacity: 0;
     transition: 0.5s;
     text-align: center;
+}
+
+.splide__pagination{
+    bottom: 0px!important;
 }
 
 .carousel-item:hover .descricao-img-carousel{
@@ -944,7 +966,6 @@ section{
 
 @media screen and (max-width: 998px) {
     #habilidades h1{
-        margin-bottom: 150px;
         text-align: center;
     }
     .nav-link{
@@ -976,6 +997,11 @@ section{
     .container-md, .container-sm, .container {
         max-width: 820px!important;
     }
+
+    .card-skills{
+        min-width: 32%!important;
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 880px) {
@@ -1004,7 +1030,12 @@ section{
     }
 
     .div-name-home{
-        height: 300px;
+        /* height: 300px; */
+        padding: 20px 20px;
+    }
+
+    .card-skills{
+        padding: 10px;
     }
 
     .col-img-home{
@@ -1020,13 +1051,30 @@ section{
         height: 250px!important;
     }
     #title span{
-        font-size: 40px;
+        font-size: 35px;
+    }
+
+    #habilidades h1{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .title-languages{
+        font-size: 25px;
+    }
+    .text-languages{
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width: 548px) {
     .card-skills{
         min-width: 48%!important;
+    }
+
+    #habilidades h1{
+        margin-top: 50px;
+        margin-bottom: 120px;
     }
 }
 

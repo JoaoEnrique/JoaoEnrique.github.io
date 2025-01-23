@@ -21,6 +21,11 @@ section{
     /* scroll-snap-stop: always!important; */
 }
 
+
+.img-experiencia{
+    width: 50%;
+}
+
 .navbar-nav{
     margin-left: 100px;
 }
@@ -697,29 +702,54 @@ section{
 }
 
 #projetos{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+}
+
+#experiencias{
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+    min-height: 100dvh;
 }
 
 #habilidades{
-    min-height: 100vh;
+    background: #090a0f!important;
+    min-height: 100dvh;
     display: grid;
     place-items: center;
 }
 
-
-#projetos, #habilidades{
-    background: #1b2735;
-    padding-top: 50px;
+#experiencias{
+    display: flex;
+    flex-wrap: wrap;
+    background: #000;
 }
+
+#experiencias img{
+    margin: 0 auto;
+}
+
+#experiencias h1{
+    width: 100%;
+}
+
+/* #projetos, #habilidades{ */
+#projetos, #habilidades{
+    /* background: #090a0f; */
+    background: #1b2735;
+    /* padding-top: 50px; */
+}
+
+
 #tecnologias{
-    background: #090a0f;
+    /* background: #090a0f; */
+    background: #1b2735;
     min-height: 100vh;
     padding-top: 20px;
 }
 
 
-#projetos h1{
+#projetos h1, #experiencias h1{
     text-align: center;
     font-size: 50px;
     padding: 40px 0 40px 0!important;
@@ -751,7 +781,8 @@ section{
 }
 
 .card-tecnologies{
-    background: #1b2735!important;
+    /* background: #1b2735!important; */
+    background: #090a0f!important;
     height: 230px!important;
     padding-left: 5px;
     padding-right: 5px;
@@ -768,10 +799,12 @@ section{
     flex-direction: column;
     justify-content: center;
     padding: 50px;
-    background: #090a0f!important;
+    /* background: #090a0f!important; */
+    background: #1b2735!important;
 }
 
 .card-experiencia{
+    /* background: #090a0f!important; */
     background: #090a0f!important;
     color: #fff!important;
     height: 100%!important;
@@ -1002,6 +1035,10 @@ section{
         min-width: 32%!important;
         padding: 30px;
     }
+
+    #experiencias img{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 880px) {
@@ -1075,6 +1112,11 @@ section{
     #habilidades h1{
         margin-top: 50px;
         margin-bottom: 120px;
+    }
+
+    #experiencias img{
+        width: 100%;
+        max-height: 419px;
     }
 }
 

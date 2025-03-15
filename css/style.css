@@ -710,12 +710,11 @@ section {
 }
 
 #projetos {
-    /* padding-top: 100px;
-    padding-bottom: 100px; */
+    padding-top: 50px;
 }
 
 #experiencias {
-    /* padding-top: 50px; */
+    padding-top: 50px;
     padding-bottom: 50px;
     min-height: 100dvh;
 }
@@ -1112,6 +1111,12 @@ section {
         height: 250px;
         object-fit: cover;
     }
+
+
+    #projetos, #habilidades {
+        padding-top: 50px;
+    }
+
 }
 
 /* .carousel-item img, .card-experiencia video{

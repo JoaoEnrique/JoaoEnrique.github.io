@@ -25,11 +25,40 @@
 <body>
 
     <section>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="position: absolute;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <!-- bg-dark -->
             <div class="container-fluid">
                 <a class="navbar-brand" href="#home">João Enrique</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencias">Experiências</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projetos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Braço controlado por voz</a></li>
+                                <li><a class="dropdown-item" href="#">Rede social Paçoca</a></li>
+                                <li><a class="dropdown-item" href="#">Read Books</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+
+                </div>
             </div>
+
         </nav>
     </section>
 
@@ -110,7 +139,8 @@
                         <div class="card-body">
                             <div>
                                 <h5>Braço robótico com comando de voz. Assistente virtual</h5>
-                                <p>O braço recebe comandos por voz, para os movimentos cadastrados. Acende/Apaga uma lâmpada e possui integração por API do ChatGPT para respostas por voz</p>
+                                <p>O braço recebe comandos por voz, para os movimentos cadastrados. Acende/Apaga uma
+                                    lâmpada e possui integração por API do ChatGPT para respostas por voz</p>
                                 <p>Python Esp32 e C++</p>
                             </div>
                             <a target="_blank" href="https://photos.app.goo.gl/9JVPzG6hJBtV5s4v5"
@@ -300,7 +330,7 @@
                                 <p>Site com Realidade Aumentada para ciências da natureza. Trabalho desenvolvido em
                                     grupo
                                     para TCC. Possui documentação UML</p>
-                                    <p>HTML, CSS, JS, Bootstrap Laravel/PHP e MySQL</p>
+                                <p>HTML, CSS, JS, Bootstrap Laravel/PHP e MySQL</p>
                             </div>
                             <a target="_blank" href="https://github.com/JoaoEnrique/ScienceAr-TCC"
                                 class="btn-experiencia btn"><svg xmlns="http://www.w3.org/2000/svg" width="25"
@@ -420,7 +450,8 @@
 
             <div class="card-body card-skills">
                 <p class="title-languages">UML</p>
-                <p class="text-languages">Documentação de projetos utilizando a linguagem de modelagem UML, com diagramas como o Diagrama de Classe, de sequência e Caso de Uso</p>
+                <p class="text-languages">Documentação de projetos utilizando a linguagem de modelagem UML, com
+                    diagramas como o Diagrama de Classe, de sequência e Caso de Uso</p>
             </div>
 
             <!-- <div class="card-body card-skills">
@@ -774,6 +805,7 @@
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

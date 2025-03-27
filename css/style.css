@@ -709,7 +709,7 @@ section {
         498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
 
-#projetos {
+#projetos, #sobre {
     padding-top: 50px;
 }
 
@@ -724,6 +724,11 @@ section {
     min-height: 100dvh;
     display: grid;
     place-items: center;
+}
+
+#sobre{
+    min-height: 100dvh;
+    background: #090a0f !important;
 }
 
 #experiencias {
@@ -742,6 +747,7 @@ section {
 
 /* #projetos, #habilidades{ */
 #projetos,
+#sobre,
 #habilidades {
     /* background: #090a0f; */
     background: #1b2735;
@@ -758,6 +764,7 @@ section {
 
 
 #projetos h1,
+#sobre h1,
 #experiencias h1 {
     text-align: center;
     font-size: 50px;
@@ -814,13 +821,23 @@ section {
 }
 
 .card-experiencia {
-    /* background: #090a0f!important; */
     background: #090a0f !important;
     color: #fff !important;
     height: 100% !important;
 }
 
-.card-experiencia .card-body {
+.card-sobre{
+    background: #1b2735!important;
+    color: #fff !important;
+    height: 100% !important;
+}
+.text-sobre{
+    margin-top: 20px;
+    font-weight: normal!important;
+}
+
+.card-experiencia .card-body,
+.card-sobre .card-body {
     padding: 10px 20px;
     height: 100% !important;
     justify-content: space-between;
@@ -1113,7 +1130,7 @@ section {
     }
 
 
-    #projetos, #habilidades {
+    #projetos, #sobre, #habilidades {
         padding-top: 50px;
     }
 

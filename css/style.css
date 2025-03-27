@@ -5,6 +5,13 @@
     margin-left: 40px;
 }
 
+.navbar{
+    position: fixed!important;
+    z-index: 9;
+    left: 0;
+    right: 0;
+}
+
 html {
     scroll-snap-type: y mandatory !important;
     overflow-y: scroll !important;
@@ -1132,6 +1139,13 @@ section {
 
     #projetos, #sobre, #habilidades {
         padding-top: 50px;
+    }
+
+    .navbar{
+        position: absolute!important;
+        z-index: 9;
+        left: 0;
+        right: 0;
     }
 
 }

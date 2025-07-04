@@ -8,45 +8,48 @@
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>João Enrique - Portifólio</title>
-    <link rel="stylesheet" href="css/style.css?v=2">
-    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
-    <link rel="shortcut icon" href="img/joao.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="css/style.css?v=2" />
+    <link rel="stylesheet" href="css/stars.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css" />
+    <link rel="shortcut icon" href="img/joao.png" type="image/x-icon" />
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <section>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <!-- bg-dark -->
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#home">João Enrique</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#projetos">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#habilidades">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#tecnologias">Tecnologias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experiencias">Experiências</a>
-                        </li>
-                        <!-- <li class="nav-item dropdown">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- bg-dark -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">João Enrique</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#projetos"
+                  >Projetos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tecnologias">Tecnologias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencias">Experiências</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Projetos
@@ -57,897 +60,1631 @@
                                 <li><a class="dropdown-item" href="#">Read Books</a></li>
                             </ul>
                         </li> -->
-                    </ul>
-
-                </div>
-            </div>
-
-        </nav>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </section>
 
     <section id="home" class="wrapper">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="title">
-            <div class="container container-home">
-                <div class="row">
-                    <div class="col-xl-6 col-sm-8 col-name-home">
-                        <div class="div-name-home">
-                            <span id="name"></span>
-                            <p>Desenvolvedor Full-Stack na IBM</p>
-                            <div class="btns-home">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="title">
+        <div class="container container-home">
+          <div class="row">
+            <div class="col-xl-6 col-sm-8 col-name-home">
+              <div class="div-name-home">
+                <span id="name"></span>
+                <p>Desenvolvedor Full-Stack na IBM</p>
+                <div class="btns-home">
+                  <!-- BTN GITHUB -->
+                  <a
+                    class="btn btn-dark bg-gradient"
+                    target="_blank"
+                    style="width: 40%"
+                    href="http://github.com/JoaoEnrique"
+                  >
+                    <!--Botao GitHub-->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      ></path>
+                    </svg>
+                    GitHub
+                  </a>
 
-                                <!-- BTN GITHUB -->
-                                <a class="btn btn-dark bg-gradient" target="_blank" style="width: 40%;"
-                                    href="http://github.com/JoaoEnrique">
-                                    <!--Botao GitHub-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                        class="bi bi-github" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                        </path>
-                                    </svg>
-                                    GitHub
-                                </a>
-
-                                <!-- BTN LINKEDIN -->
-                                <a class="btn btn-primary bg-gradient" target="_blank" style="width: 40%;"
-                                    href="http://www.linkedin.com/in/joãoenrique">
-                                    <!--Botao Linkedin-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
-                                        </path>
-                                    </svg>
-                                    Linkedin
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-sm-4 col-img-home">
-                        <div class="img-home">
-                            <!-- <img src="img/joao.png" alt="" srcset=""> -->
-                        </div>
-                    </div>
+                  <!-- BTN LINKEDIN -->
+                  <a
+                    class="btn btn-primary bg-gradient"
+                    target="_blank"
+                    style="width: 40%"
+                    href="http://www.linkedin.com/in/joãoenrique"
+                  >
+                    <!--Botao Linkedin-->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      class="bi bi-linkedin"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                      ></path>
+                    </svg>
+                    Linkedin
+                  </a>
                 </div>
+              </div>
             </div>
+            <div class="col-xl-6 col-sm-4 col-img-home">
+              <div class="img-home">
+                <!-- <img src="img/joao.png" alt="" srcset=""> -->
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- SETA PARA DESCER -->
-        <a class="link-descer" href="#projetos">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
-                class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z">
-                </path>
-            </svg>
-        </a>
+      <!-- SETA PARA DESCER -->
+      <a class="link-descer" href="#projetos">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          fill="currentColor"
+          class="bi bi-arrow-down-short"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+          ></path>
+        </svg>
+      </a>
     </section>
 
     <section id="sobre" class="screen">
-        <h1>Sobre</h1>
+      <h1>Sobre</h1>
 
-        <div class="container">
-            <div class="row row-projetos" id="row-projetos">
-                <p style="color: #fff; font-size: 20px;">Olá! Meu nome é João Enrique Barbosa Santos Alves</p>
+      <div class="container">
+        <div class="row row-projetos" id="row-projetos">
+          <p style="color: #fff; font-size: 20px">
+            Olá! Meu nome é João Enrique Barbosa Santos Alves
+          </p>
 
-                <!-- CARD JARVIS -->
-                <div class="col-12 col-experiencia" data-aos="fade-left">
-                    <div class="card card-sobre">
-                        <div class="card-body">
-                            <div>
-                                <h5 class="text-sobre">
-                                    Tenho 19 anos e atualmente trabalho na área de
-                                    Consulting na IBM. Iniciei na IBM como desenvolvedor de automação de testes com Java
-                                    e migrei para a área de Consulting, onde trabalho em um projeto da Petrobras
-                                    utilizando React JS e Python com FastAPI para o Backend, realizando testes em Jest e Pytest.
-                                </h5>
-                                <h5 class="text-sobre">
-                                    Desenvolvi de forma independente uma rede social, atualmente em produção e comm usuários ativos, que 
-                                    possui sistema de autenticação compartilhado com outros sistemas que desenvolvi e foi publicado na Play Store
-                                    utilizando as tecnologias PHP/Laravel, React JS e MySQL. Link: https://pacoca.net
-                                </h5>
-                                <h5 class="text-sobre">
-                                    Comecei minha carreira como desenvolvedor Júnior especializado em programação Full-Stack com
-                                    Laravel, MySQL, Tailwind CSS, React JS e Bootstrap. Atualmente, estou ampliando meus
-                                    conhecimentos em React Native para projetos pessoais.
-                                </h5>
-                                <h5 class="text-sobre">
-                                    Concluí o ensino médio com técnico em Desenvolvimento de Sistemas na Etec Zona Leste
-                                    e, atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Fatec Zona
-                                    Leste.
-                                </h5>
-                                <h5 class="text-sobre">
-                                    Sou apaixonado pela área de IoT e criei alguns projetos com a Internet das Coisas,
-                                    como um braço mecânico controlado por voz desenvolvido com ESP32, C++ e Python.
-                                </h5>
-                                <h5 class="text-sobre">
-                                    Estou sempre em busca de aprimorar minhas habilidades e me manter atualizado com as
-                                    tecnologias mais recentes. Estou aberto a novas oportunidades e desafios que
-                                    permitam meu crescimento no desenvolvimento de software.
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
+          <!-- CARD JARVIS -->
+          <div class="col-12 col-experiencia" data-aos="fade-left">
+            <div class="card card-sobre">
+              <div class="card-body">
+                <div>
+                  <h5 class="text-sobre">
+                    Tenho 19 anos e atualmente trabalho na área de Consulting na
+                    IBM. Iniciei na IBM como desenvolvedor de automação de
+                    testes com Java e migrei para a área de Consulting, onde
+                    trabalho em um projeto da Petrobras utilizando React JS e
+                    Python com FastAPI para o Backend, realizando testes em Jest
+                    e Pytest.
+                  </h5>
+                  <h5 class="text-sobre">
+                    Desenvolvi de forma independente uma rede social, atualmente
+                    em produção e comm usuários ativos, que possui sistema de
+                    autenticação compartilhado com outros sistemas que
+                    desenvolvi e foi publicado na Play Store utilizando as
+                    tecnologias PHP/Laravel, React JS e MySQL. Link:
+                    https://pacoca.net
+                  </h5>
+                  <h5 class="text-sobre">
+                    Comecei minha carreira como desenvolvedor Júnior
+                    especializado em programação Full-Stack com Laravel, MySQL,
+                    Tailwind CSS, React JS e Bootstrap. Atualmente, estou
+                    ampliando meus conhecimentos em React Native para projetos
+                    pessoais.
+                  </h5>
+                  <h5 class="text-sobre">
+                    Concluí o ensino médio com técnico em Desenvolvimento de
+                    Sistemas na Etec Zona Leste e, atualmente, estou cursando
+                    Análise e Desenvolvimento de Sistemas na Fatec Zona Leste.
+                  </h5>
+                  <h5 class="text-sobre">
+                    Sou apaixonado pela área de IoT e criei alguns projetos com
+                    a Internet das Coisas, como um braço mecânico controlado por
+                    voz desenvolvido com ESP32, C++ e Python.
+                  </h5>
+                  <h5 class="text-sobre">
+                    Estou sempre em busca de aprimorar minhas habilidades e me
+                    manter atualizado com as tecnologias mais recentes. Estou
+                    aberto a novas oportunidades e desafios que permitam meu
+                    crescimento no desenvolvimento de software.
+                  </h5>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="screen" id="projetos">
-        <h1>Projetos</h1>
+      <h1>Projetos</h1>
 
-        <div class="container">
-            <div class="row row-projetos" id="row-projetos">
-                <p style="color: #fff; font-size: 20px;">Clique nas imagens para ter mais informações e visualizar mais
-                    imagens. É possível ver alguns projetos em produção</p>
+      <div class="container">
+        <div class="row row-projetos" id="row-projetos">
+          <p style="color: #fff; font-size: 20px">
+            Clique nas imagens para ter mais informações e visualizar mais
+            imagens. É possível ver alguns projetos em produção
+          </p>
 
-                <!-- CARD JARVIS -->
-                <div class="col-12 col-sm-6 mt-4 col-experiencia" data-aos="fade-left">
-                    <div class="card card-experiencia">
-                        <video class="" src="img/jarvis.mp4" controls></video>
-                        <!-- <iframe src="https://drive.google.com/file/d/1j3woRjbTWOScUq_risaAXgFKMk1Xwn2N/preview" width="640" height="480" allow="autoplay"></iframe> -->
-                        <div class="card-body">
-                            <div>
-                                <h5>Braço robótico com comando de voz. Assistente virtual</h5>
-                                <p>O braço recebe comandos por voz, para os movimentos cadastrados. Acende/Apaga uma
-                                    lâmpada e possui integração por API do ChatGPT para respostas por voz</p>
-                                <p>Python Esp32 e C++</p>
-                            </div>
-                            <a target="_blank" href="https://photos.app.goo.gl/9JVPzG6hJBtV5s4v5"
-                                class="btn-experiencia-video btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-link" viewBox="0 0 16 16">
-                                    <path
-                                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                    <path
-                                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                                </svg>
-                                Ver vídeo
-                            </a>
-                        </div>
-                    </div>
+          <!-- CARD JARVIS -->
+          <div
+            class="col-12 col-sm-6 mt-4 col-experiencia"
+            data-aos="fade-left"
+          >
+            <div class="card card-experiencia">
+              <video class="" src="img/jarvis.mp4" controls></video>
+              <!-- <iframe src="https://drive.google.com/file/d/1j3woRjbTWOScUq_risaAXgFKMk1Xwn2N/preview" width="640" height="480" allow="autoplay"></iframe> -->
+              <div class="card-body">
+                <div>
+                  <h5>Braço robótico com comando de voz. Assistente virtual</h5>
+                  <p>
+                    O braço recebe comandos por voz, para os movimentos
+                    cadastrados. Acende/Apaga uma lâmpada e possui integração
+                    por API do ChatGPT para respostas por voz
+                  </p>
+                  <p>Python Esp32 e C++</p>
                 </div>
-
-                <!-- CARD Paçoca -->
-                <div class="col-12 col-sm-6 mt-4 col-experiencia" data-aos="fade-left">
-                    <div class="card card-experiencia">
-                        <div id="carouselReadBook" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="2000">
-                                    <img class="d-block w-100" src="img/feed.jpeg" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Feed da Rede Social
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/pacoca2.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Página de Conta
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/pacoca3.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Publicações do usuário
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/pacoca4.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Seguir usuário
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselReadBook"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselReadBook"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <div>
-                                <h5>Rede Social</h5>
-                                <p>
-                                    Rede social em produção com usuários ativos: <a href="https://pacoca.site"
-                                        target="_blank" rel="noopener noreferrer">https://pacoca.site</a>.
-                                    Possui uma versão mobile na Play Store: <a
-                                        href="https://play.google.com/store/apps/details?id=com.joaoalves.pacoca&pcampaignid=web_share"
-                                        target="_blank" rel="noopener noreferrer">Clique aqui para visualizar e
-                                        baixar</a>
-
-                                </p>
-                                <p>HTML, CSS, JS, Laravel/PHP, MySQL, React JS e React Native</p>
-                            </div>
-                            <a target="_blank" href="https://pacoca.site/" class="btn-experiencia btn"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-link" viewBox="0 0 16 16">
-                                    <path
-                                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                    <path
-                                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                                </svg> Ver no ar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD READ BOOK  -->
-                <div class="col-12 col-sm-6 mt-4 col-experiencia" data-aos="fade-left">
-                    <div class="card card-experiencia">
-                        <div id="carouselPacoca" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="2000">
-                                    <img class="d-block w-100" src="img/home.jpeg" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Landing Page
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/livro1.jpeg" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Página de Conta
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/livro2.jpeg" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Publicações do usuário
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/todos_livros.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Lista de Livros
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPacoca"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselPacoca"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <div>
-                                <h5>Site de gerenciamento de leitura - Read Books</h5>
-                                <p>Você consegue visualizar
-                                    todos os livros que leu, está lendo ou deseja ler e pode compartilhar as
-                                    informações da sua leitura. Além de possui integração com a <a
-                                        href="https://pacoca.site" target="_blank" rel="noopener noreferrer">Reade Social</a>
-                                </p>
-                                <p>HTML, CSS, JS, Laravel/PHP, MySQL e React Native</p>
-                            </div>
-                            <a target="_blank" href="https://readbooks.site" class="btn-experiencia btn"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-link" viewBox="0 0 16 16">
-                                    <path
-                                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                    <path
-                                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                                </svg> Ver no ar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD SCIENCE AR  -->
-                <div class="col-12 col-sm-6 mt-4 col-experiencia" data-aos="fade-left">
-                    <div class="card card-experiencia">
-                        <div id="carouselScience" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="2000">
-                                    <img class="d-block w-100" src="img/science-ar.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Progresso dos quizes <br> sobre ciências
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/science-ar2.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Página home
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/science-ar3.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Listagem dos quizzes
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselScience"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselScience"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <img src="" alt="" srcset="">
-                        <div class="card-body">
-                            <div>
-                                <h5>Science AR</h5>
-                                <p>Site com Realidade Aumentada para ciências da natureza. Trabalho desenvolvido em
-                                    grupo
-                                    para TCC. Possui documentação UML</p>
-                                <p>HTML, CSS, JS, Bootstrap Laravel/PHP e MySQL</p>
-                            </div>
-                            <a target="_blank" href="https://github.com/JoaoEnrique/ScienceAr-TCC"
-                                class="btn-experiencia btn"><svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                    height="25" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                                    <path
-                                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                    <path
-                                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                                </svg> Ver projeto</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD CLONAGEM  -->
-                <div class="col-12 col-sm-6 mt-4 col-experiencia" data-aos="fade-left">
-                    <div class="card card-experiencia">
-                        <!-- <video class="" src="img/jarvis.mp4" controls></video> -->
-
-                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="2000">
-                                    <img class="d-block w-100" src="img/mac.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Clonagem do Layout do sistema operacional MAC
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/netflix.jpeg" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Clonagem do Layout do YouTube
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/facebook.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Clonagem do Layout do facebook
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/filmes.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Filtro de filmes com JS
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/pessoa.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Gerador de Pessoas
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/gerador-texto.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Gerador de texto
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="d-block w-100" src="img/wallpaper.png" alt="" srcset="">
-                                    <div class="descricao-img-carousel">
-                                        Site de baixar wallpapers
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-
-                        <img src="" alt="" srcset="">
-                        <div class="card-body">
-                            <h5>Clonagem de Sites</h5>
-                            <p>Clonagem de Layout para desenvolver front-end. Clique no slide acima para ver mais sites
-                            </p>
-                            <a target="_blank" href="https://www.github.com/JoaoEnrique"
-                                class="btn-experiencia btn"><svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                    height="25" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                                    <path
-                                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                    <path
-                                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                                </svg> Ver projetos</a>
-                        </div>
-                    </div>
-                </div>
+                <a
+                  target="_blank"
+                  href="https://photos.app.goo.gl/9JVPzG6hJBtV5s4v5"
+                  class="btn-experiencia btn"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-link"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                    />
+                    <path
+                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"
+                    />
+                  </svg>
+                  Ver vídeo
+                </a>
+              </div>
             </div>
+          </div>
+
+          <!-- CARD Paçoca -->
+          <div
+            class="col-12 col-sm-6 mt-4 col-experiencia"
+            data-aos="fade-left"
+          >
+            <div class="card card-experiencia">
+              <div
+                id="carouselReadBook"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img
+                      class="d-block w-100"
+                      src="img/feed.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Feed da Rede Social
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/pacoca2.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">Página de Conta</div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/pacoca3.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Publicações do usuário
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/pacoca4.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">Seguir usuário</div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselReadBook"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselReadBook"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <div>
+                  <h5>Rede Social</h5>
+                  <p>
+                    <a
+                      href="https://pacoca.net"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Rede social</a
+                    >
+                    em produção com usuários ativos. Publicado na
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.joaoalves.pacoca&pcampaignid=web_share"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Play Store</a
+                    >
+                  </p>
+                  <p style="margin-bottom: 0">
+                    CI/CD, DevOps, gestão de servidores Linux (VPS) e publicação
+                    na Play Store
+                  </p>
+                  <p>
+                    HTML, CSS, JS, Laravel/PHP, MySQL, React JS React Native
+                  </p>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://pacoca.site/"
+                  class="btn-experiencia btn"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-link"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                    />
+                    <path
+                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"
+                    />
+                  </svg>
+                  Ver no ar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD READ BOOK  -->
+          <div
+            class="col-12 col-sm-6 mt-4 col-experiencia"
+            data-aos="fade-left"
+          >
+            <div class="card card-experiencia">
+              <div
+                id="carouselPacoca"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img
+                      class="d-block w-100"
+                      src="img/home.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">Landing Page</div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/livro1.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">Página de Conta</div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/livro2.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Publicações do usuário
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/todos_livros.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">Lista de Livros</div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselPacoca"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselPacoca"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <div>
+                  <h5>Read Books - Site de gerenciamento de leitura</h5>
+                  <p>
+                    Você consegue visualizar todos os livros que leu, está lendo
+                    ou deseja ler e pode compartilhar as informações da sua
+                    leitura. Além de possuir integração com a
+                    <a
+                      href="https://pacoca.site"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Rede Social</a
+                    >
+                  </p>
+                  <p style="margin-bottom: 0">
+                    CI/CD, DevOps, gestão de servidores Linux (VPS) e publicação
+                    na Play Store
+                  </p>
+                  <p>HTML, CSS, JS, Laravel/PHP, MySQL e React Native</p>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://readbooks.site"
+                  class="btn-experiencia btn"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-link"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                    />
+                    <path
+                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"
+                    />
+                  </svg>
+                  Ver no ar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD SCIENCE AR  -->
+          <div
+            class="col-12 col-sm-6 mt-4 col-experiencia"
+            data-aos="fade-left"
+          >
+            <div class="card card-experiencia">
+              <div
+                id="carouselScience"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img
+                      class="d-block w-100"
+                      src="img/science-ar.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Progresso dos quizes <br />
+                      sobre ciências
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/science-ar2.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">Página home</div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/science-ar3.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Listagem dos quizzes
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselScience"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselScience"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <img src="" alt="" srcset="" />
+              <div class="card-body">
+                <div>
+                  <h5>Science AR</h5>
+                  <p>
+                    Site com conteúdo didático e aplicativo com Realidade
+                    Aumentada para ciências da natureza. Trabalho desenvolvido
+                    em grupo para TCC. Possui documentação UML.
+                  </p>
+                  <p>HTML, CSS, JS, Bootstrap Laravel/PHP e MySQL, UML</p>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://github.com/JoaoEnrique/ScienceAr-TCC"
+                  class="btn-experiencia btn"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-link"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                    />
+                    <path
+                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"
+                    />
+                  </svg>
+                  Ver projeto</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD CLONAGEM  -->
+          <div
+            class="col-12 col-sm-6 mt-4 col-experiencia"
+            data-aos="fade-left"
+          >
+            <div class="card card-experiencia">
+              <div
+                id="carouselCira"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img
+                      class="d-block w-100"
+                      src="img/cira.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">Página Inicial</div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/cira2.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Referências Geradas
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselCira"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselCira"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <div>
+                  <h5>Cira - Gerador de Referências ABTN</h5>
+                  <p>
+                    <a
+                      href="https://cira-blond.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Gerador de Referências ABTN</a
+                    >
+                    Baseado no site More
+                  </p>
+                  <p>HTML, CSS, JS, e React JS</p>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://cira-blond.vercel.app/"
+                  class="btn-experiencia btn"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-link"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                    />
+                    <path
+                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"
+                    />
+                  </svg>
+                  Ver no ar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD CLONAGEM  -->
+          <div
+            class="col-12 col-sm-6 mt-4 col-experiencia"
+            data-aos="fade-left"
+          >
+            <div class="card card-experiencia">
+              <!-- <video class="" src="img/jarvis.mp4" controls></video> -->
+
+              <div
+                id="carouselExample"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img
+                      class="d-block w-100"
+                      src="img/mac.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Clonagem do Layout do sistema operacional MAC
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/netflix.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Clonagem do Layout do YouTube
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/facebook.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Clonagem do Layout do facebook
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/filmes.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Filtro de filmes com JS
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/pessoa.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">Gerador de Pessoas</div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/gerador-texto.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">Gerador de texto</div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      class="d-block w-100"
+                      src="img/wallpaper.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="descricao-img-carousel">
+                      Site de baixar wallpapers
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <img src="" alt="" srcset="" />
+              <div class="card-body">
+                <h5>Outros</h5>
+                <p>
+                  Clonagens de Layouts para desenvolver front-end. Clique no
+                  slide acima para ver mais sites
+                </p>
+                <a
+                  target="_blank"
+                  href="https://www.github.com/JoaoEnrique"
+                  class="btn-experiencia btn"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-link"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                    />
+                    <path
+                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"
+                    />
+                  </svg>
+                  Ver projetos</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="screen" id="habilidades">
-        <h1>Habilidades</h1>
+      <h1>Habilidades</h1>
 
-        <!-- CARROUSEL LINGUAGENS -->
-        <div class="container"
-            style="display: flex; flex-wrap: wrap; margin-top: -100px; justify-content: space-between;">
-            <div class="card-body card-skills">
-                <p class="title-languages">Back-End</p>
-                <p class="text-languages">Conhecimento em PHP/Laravel, Python/FastAPI e Node JS com Express.</p>
-            </div>
+      <!-- CARROUSEL LINGUAGENS -->
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: -100px;
+          justify-content: space-between;
+        "
+      >
+        <div class="card-body card-skills">
+          <p class="title-languages">Full-Stack</p>
+          <p class="text-languages">
+            Construção de backends com PHP/Laravel, Python/FastAPI e Node JS com
+            Express.
+            <br />
+            <br />
+            Frontend com: HTML, CSS, JavaScript, Bootstrap, Tailwind, React.JS.
+            Estudando vue.js,
+          </p>
+        </div>
 
-            <div class="card-body card-skills">
-                <p class="title-languages">Front-End</p>
-                <p class="text-languages">Conhecimento em HTML, CSS, JavaScript, Bootstrap e Tailwind. Estudando vue.js,
-                    React.js</p>
-            </div>
+        <div class="card-body card-skills">
+          <p class="title-languages">DevOps</p>
+          <p class="text-languages">
+            Conhecimentos introdutórios em servidores VPS e pipelines de CI/CD
+            utilizando GitHub Actions e Jenkins.
+          </p>
+        </div>
 
-            <div class="card-body card-skills">
-                <p class="title-languages">IoT</p>
-                <p class="text-languages">Programação de dispositivos inteligentes com Esp32/Esp8266 e C++</p>
-            </div>
+        <div class="card-body card-skills">
+          <p class="title-languages">IoT</p>
+          <p class="text-languages">
+            Programação de dispositivos inteligentes com Esp32/Esp8266 e C++
+          </p>
+        </div>
 
-            <div class="card-body card-skills">
-                <p class="title-languages">Modelagem e ágil</p>
-                <p class="text-languages">Conhecimento em Scrum e Safe, além de realização da documentação de projetos utilizando a linguagem de modelagem UML, com
-                    diagramas como o Diagrama de Classe, de sequência e Caso de Uso</p>
-            </div>
+        <div class="card-body card-skills">
+          <p class="title-languages">Modelagem e ágil</p>
+          <p class="text-languages">
+            Conhecimento em Scrum e SAFe, com experiência no uso do ServiceNow.
+            Realização de documentação de projetos utilizando linguagem de
+            modelagem UML, incluindo diagramas de Classes, Sequência e Casos de
+            Uso.
+          </p>
+        </div>
 
-            <!-- <div class="card-body card-skills">
+        <!-- <div class="card-body card-skills">
                 <p class="title-languages">Unity / RA</p>
                 <p class="text-languages">Conhecimento iniciante em aplicativos em Realidade Aumentada com Unity e C#
                 </p>
             </div> -->
 
-            <div class="card-body card-skills">
-                <p class="title-languages">Banco de Dados</p>
-                <p class="text-languages">Conhecimento em Banco de Dados relacional MySQL e não relacional Firebase. ORMS: Eloquent e Sequelize.
-                </p>
-            </div>
-
-            <div class="card-body card-skills">
-                <p class="title-languages">Mobile</p>
-                <p class="text-languages">Conhecimento intermediario em React Native e em publicações na Play Store e Apple Store</p>
-            </div>
+        <div class="card-body card-skills">
+          <p class="title-languages">Banco de Dados</p>
+          <p class="text-languages">
+            Conhecimento em bancos de dados relacionais, como MySQL, e não
+            relacionais, como Firebase. Experiência com ORMs: Eloquent e
+            Sequelize.
+          </p>
         </div>
-    </section>
 
+        <div class="card-body card-skills">
+          <p class="title-languages">Mobile</p>
+          <p class="text-languages">
+            Experiência intermediária em desenvolvimento com React Native e no
+            processo de publicação de aplicativos na loja Google Play Store
+          </p>
+        </div>
+      </div>
+    </section>
 
     <script>
-        document.querySelector(".link-descer").addEventListener("click", function (e) {
-            e.preventDefault();
+      document
+        .querySelector(".link-descer")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
 
-            document.querySelector("#projetos").scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
+          document.querySelector("#projetos").scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
         });
 
-
-        document.addEventListener('DOMContentLoaded', function () {
-            // Inicialize o primeiro carrossel
-            var splideOne = new Splide('#splideOne', {
-                // type: 'loop',
-                perPage: 6,
-                focus: 'center',
-                autoplay: true,
-            });
-
-            // Inicialize o segundo carrossel
-            var splideTwo = new Splide('#splideTwo', {
-                // type: 'loop',
-                perPage: 6,
-                focus: 'center',
-                autoplay: true,
-            });
-
-            // Monte ambos os carrosséis
-            splideOne.mount();
-            splideTwo.mount();
+      document.addEventListener("DOMContentLoaded", function () {
+        // Inicialize o primeiro carrossel
+        var splideOne = new Splide("#splideOne", {
+          // type: 'loop',
+          perPage: 6,
+          focus: "center",
+          autoplay: true,
         });
+
+        // Inicialize o segundo carrossel
+        var splideTwo = new Splide("#splideTwo", {
+          // type: 'loop',
+          perPage: 6,
+          focus: "center",
+          autoplay: true,
+        });
+
+        // Monte ambos os carrosséis
+        splideOne.mount();
+        splideTwo.mount();
+      });
     </script>
 
-
     <section class="screen" id="tecnologias">
-        <!-- CARROUSEL TECNOLOGIAS -->
-        <h1>Tecnologias</h1>
-        <div class="container carousel">
-            <section class="splide" id="splideTwo" aria-label="Splide 2">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/laravel.png" alt="" srcset="">
-                                    <p class="title-tecnologie">Laravel</p>
-                                    <p class="text-tecnologie">Conhecimento intermediario - Framework PHP</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/react.png" alt="" srcset="">
-                                    <p class="title-tecnologie">React.js</p>
-                                    <p class="text-tecnologie">Conhecimento iniciante</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/tailwind.svg" height="100" width="">
-                                    <p class="title-tecnologie">Tailwind</p>
-                                    <p class="text-tecnologie">Conhecimento intermediario</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/bootstrap.png">
-                                    <p class="title-tecnologie">Bootstrap</p>
-                                    <p class="text-tecnologie">Conhecimento avançado</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg"
-                                        height="70" style="margin-top: 10px!important;">
-                                    <p class="title-tecnologie mt-3">UML</p>
-                                    <p class="text-tecnologie">Conhecimento intermediario</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/node.png" height="70"
-                                        style="margin-top: 10px!important;">
-                                    <p class="title-tecnologie mt-3">Node JS</p>
-                                    <p class="text-tecnologie">Conhecimento intermediario</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/unity.png" alt="" srcset="">
-                                    <p class="title-tecnologie">Unity</p>
-                                    <p class="text-tecnologie">Conhecimento iniciante</p>
-                                </div>
-                            </div>
-                        </li>
-
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/mysql.png" alt="" srcset="">
-                                    <p class="title-tecnologie">MySQL</p>
-                                    <p class="text-tecnologie">Conhecimento intermediario</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/git.png" alt="" srcset="">
-                                    <p class="title-tecnologie">Git</p>
-                                    <p class="text-tecnologie">Conhecimento intermediario</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/github.png" alt="" srcset="">
-                                    <p class="title-tecnologie">GitHub</p>
-                                    <p class="text-tecnologie">Conhecimento avançado</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/arduino.png" alt="" srcset="">
-                                    <p class="title-tecnologie">Arduino/Esp</p>
-                                    <p class="text-tecnologie">Conhecimento intermediario - Sistemas embarcados</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/iot.png" alt="" srcset="">
-                                    <p class="title-tecnologie">IoT</p>
-                                    <p class="text-tecnologie">Conhecimento intermediario - Internet das Coisas</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/redes.png" alt="" srcset="">
-                                    <p class="title-tecnologie">Redes</p>
-                                    <p class="text-tecnologie">Conhecimento iniciante - Rede de computadores</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/trello.png" alt="" srcset="">
-                                    <p class="title-tecnologie">Trello</p>
-                                    <p class="text-tecnologie">Conhecimento iniciante</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/vue.png" alt="" srcset="">
-                                    <p class="title-tecnologie">VueJS</p>
-                                    <p class="text-tecnologie">Conhecimento iniciante</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-tecnologies">
-                                    <img class="img-tecnologies" src="img/icons/docker.png" alt="" srcset="">
-                                    <p class="title-tecnologie">Docker</p>
-                                    <p class="text-tecnologie">Conhecimento iniciante</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-
-        <h1 style="margin-top: 20px;">Linguagens</h1>
-
-        <!-- CARROUSEL LINGUAGENS -->
-        <div class="container carousel">
-            <section class="splide" id="splideOne" aria-label="Splide 1">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-languages">
-                                    <img class="img-languages" src="img/icons/php.png" alt="" srcset="">
-                                    <p class="title-languages">PHP</p>
-                                    <p class="text-languages">Conhecimento avançado</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-languages">
-                                    <div class="div-img-languages">
-                                        <img class="img-languages" height="80px" src="img/icons/html.png" alt=""
-                                            srcset="">
-                                        <img class="img-languages" height="80px" src="img/icons/css.png" alt=""
-                                            srcset="">
-                                    </div>
-                                    <p class="title-languages mt-3">HTML - CSS</p>
-                                    <p class="text-languages">Conhecimento avançado</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-languages">
-                                    <div class="div-img-languages">
-                                        <img class="img-languages" src="img/icons/js.png" alt="" srcset="">
-                                    </div>
-                                    <p class="title-languages">JS</p>
-                                    <p class="text-languages">Conhecimento avançado</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-languages">
-                                    <div class="div-img-languages">
-                                        <img class="img-languages" src="img/icons/typescript.png" alt="" srcset="">
-                                    </div>
-                                    <p class="title-languages">TypeScript</p>
-                                    <p class="text-languages">Conhecimento iniciante</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-languages">
-                                    <img class="img-languages" src="img/icons/sql.png" alt="" srcset="">
-                                    <p class="title-languages">SQL</p>
-                                    <p class="text-languages">Conhecimento avançado</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies current-item">
-                                <div class="card-body card-body-languages">
-                                    <img class="img-languages" src="img/icons/kotlin.png" alt="" srcset="">
-                                    <p class="title-languages">Kotlin</p>
-                                    <p class="text-languages">Conhecimento básico</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-languages">
-                                    <img class="img-languages" src="img/icons/python.png" alt="" srcset="">
-                                    <p class="title-languages">Python</p>
-                                    <p class="text-languages">Conhecimento básico</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-languages">
-                                    <img class="img-languages" src="img/icons/c++png.png" alt="" srcset="">
-                                    <p class="title-languages">C++ Arduino</p>
-                                    <p class="text-languages">Conhecimento intermediario - Para sistemas embarcados</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="card card-tecnologies">
-                                <div class="card-body card-body-languages">
-                                    <img class="img-languages" src="img/icons/c-sharp.png" alt="" srcset="">
-                                    <p class="title-languages">C# Unity</p>
-                                    <p class="text-languages">Conhecimento intermediario - C# para Unity</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-    </section>
-
-    <section class="screen" id="experiencias">
-        <h1>Experiência</h1>
-
-            <div class="container py-4">
-  <div class="card shadow-sm"  id="card-experiencias" style="color: #fff">
-    <div class="card-body" >
-
-      <!-- IBM -->
-      <div class="d-flex align-items-start mb-3" style="position: relative">
-        <img src="./img/ibm_.jpeg" class="company-logo" alt="IBM">
-        
-        <div class="col-11" >
-            <div class="job-title">IBM</div>
-            <div>Estágio · 9 m</div>
-            <div class="text-muted">Híbrida</div>
-            
-            <!-- Consulting -->
-            <div class="mt-3"style="position: relative;">
-                <div class="bolinha"></div>
-                    <div class="linha-experiencia"></div>
-                <div class="fw-semibold">Consulting</div>
-                <div class="text-muted">jan de 2025 – o momento · 7 meses · São Paulo, Brasil</div>
-                <div>Desenvolvedor na IBM Consulting trabalhando para empresas como a Petrobras</div>
+      <!-- CARROUSEL TECNOLOGIAS -->
+      <h1>Principais tecnologias</h1>
+      <div class="container carousel">
+        <div class="splide__list- list-cards">
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=laravel"
+                />
+                <p class="title-tecnologie">Laravel</p>
+                <p class="text-tecnologie">
+                  Conhecimento intermediario - Framework PHP
+                </p>
+              </div>
             </div>
-            
-            <!-- Automation Developer -->
-            <div class="mt-3" style="position: relative;">
-                <div class="bolinha"></div>
-                <div class="fw-semibold">Automation Developer</div>
-            <div class="text-muted">nov de 2024 – jan de 2025 · 3 meses · São Paulo, Brasil</div>
-            <div>Automação de teste para o produto Maximo da IBM focado no time de Inventory</div>
-            <div class="text-muted small">🔹 IBM Maximo · Garantia de qualidade de software · +1 competência</div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=php"
+                />
+                <p class="title-tecnologie">PHP</p>
+                <p class="text-tecnologie">
+                  Conhecimento intermediario - Framework PHP
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=mysql"
+                />
+                <p class="title-tecnologie">MySQL</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=nodejs"
+                />
+                <p class="title-tecnologie mt-3">Node JS</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=jest"
+                />
+                <p class="title-tecnologie mt-3">Jest</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=git"
+                />
+                <p class="title-tecnologie">Git</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=github"
+                />
+                <p class="title-tecnologie">Github</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=githubactions"
+                />
+                <p class="title-tecnologie">Github Actions</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=html"
+                />
+                <p class="title-tecnologie">HTML</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://skillicons.dev/icons?i=css"
+                />
+                <p class="title-tecnologie">CSS</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://skillicons.dev/icons?i=js"
+                />
+                <p class="title-tecnologie">JS</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=ts"
+                />
+                <p class="title-tecnologie">TS</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=tailwind"
+                />
+                <p class="title-tecnologie">Tailwind</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=bootstrap"
+                />
+                <p class="title-tecnologie">Bootstrap</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=react"
+                />
+                <p class="title-tecnologie">React.js</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=reactnative"
+                />
+                <p class="title-tecnologie">React Native</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=jwt"
+                />
+                <p class="title-tecnologie">JWT</p>
+                <p class="text-tecnologie">Conhecimento avançado</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=pytest"
+                />
+                <p class="title-tecnologie mt-3">Pytest</p>
+                <p class="text-tecnologie">Conhecimento intermediario</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=uml"
+                />
+                <p class="title-tecnologie">UML</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Paçoca -->
-      <div class="d-flex align-items-start mb-3">
-        <img src="./img/pacoca.jpeg" class="company-logo" alt="Paçoca">
-        <div class="col-11">
-          <div class="job-title">Fundador</div>
-          <div class="text-muted">Paçoca · Tempo integral · nov de 2023 – o momento · 1 ano 9 meses · São Paulo, Brasil</div>
-          <div>Criei uma rede social: <a href="https://pacoca.net" target="_blank">https://pacoca.net</a></div>
-          <div class="text-muted small">🔹 CI/CD · Laravel · +2 competências</div>
+      <h1 style="margin-top: 20px">Outras tecnologias</h1>
+
+      <!-- CARROUSEL LINGUAGENS -->
+      <div class="container carousel">
+        <div class="splide__list- list-cards">
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=python"
+                />
+                <p class="title-tecnologie">Python</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=fastapi"
+                />
+                <p class="title-tecnologie">FastAPI</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=docker"
+                />
+                <p class="title-tecnologie">Docker</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=angular"
+                />
+                <p class="title-tecnologie">Angular</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=firebase"
+                />
+                <p class="title-tecnologie">Firebase</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=c"
+                />
+                <p class="title-tecnologie">C</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=cs"
+                />
+                <p class="title-tecnologie">C#</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=cpp"
+                />
+                <p class="title-tecnologie">C++</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=java"
+                />
+                <p class="title-tecnologie">Java</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=express"
+                />
+                <p class="title-tecnologie">Express</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=unity"
+                />
+                <p class="title-tecnologie">Unity</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=sequelize"
+                />
+                <p class="title-tecnologie">Sequelize</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=vue"
+                />
+                <p class="title-tecnologie">Vue</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=arduino"
+                />
+                <p class="title-tecnologie">Arduino</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=expo"
+                />
+                <p class="title-tecnologie">Expo</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=electron"
+                />
+                <p class="title-tecnologie">Electron</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=spring"
+                />
+                <p class="title-tecnologie">Spring</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=jenkins"
+                />
+                <p class="title-tecnologie">Jenkins</p>
+                <p class="text-tecnologie">Conhecimento iniciante</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- </div>
+            </section> -->
       </div>
 
-      <!-- Garçom -->
-      <div class="d-flex align-items-start mb-3">
-        <img src="./img/baixados.svg" class="company-logo" alt="Paçoca">
-        <div class="col-11">
-          <div class="job-title">Garçom</div>
-          <div class="text-muted">Buffet Vision Feast · Freelancer · set de 2023 – o momento · 1 ano 11 meses · São Paulo, Brasil · Presencial</div>
-          <div>Trabalho como garçom em um Buffet de festa</div>
-          <div class="text-muted small">🔹 Relacionamento com clientes</div>
+      <h1>Ferramentas e Softwares</h1>
+      <div class="container carousel" style="padding-bottom: 400px;">
+        <div class="splide__list- list-cards">
+          <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=postman"
+                />
+                <p class="title-tecnologie">Postman</p>
+                <p class="text-tecnologie">
+                  Conhecimento intermediario
+                </p>
+              </div>
+            </div>
         </div>
-      </div>
 
-      <!-- DC Tecnologia -->
-      <div class="d-flex align-items-start mb-3">
-        <img src="./img/dc.jpeg" class="company-logo" alt="DC TECNOLOGIA">
-        <div class="col-11">
-          <div class="job-title">Programador Júnior</div>
-          <div class="text-muted">DC TECNOLOGIA · Tempo integral · abr de 2024 – nov de 2024 · 8 meses · São Paulo, Brasil · Remota</div>
-          <div>Programação Web full-stack em Laravel e banco de dados, com alguns projetos em React.</div>
-          <div class="text-muted small">🔹 Desenvolvimento web · Web design responsivo · +2 competências</div>
+        <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=gimp"
+                />
+                <p class="title-tecnologie">Gimp</p>
+                <p class="text-tecnologie">
+                  Conhecimento intermediario
+                </p>
+              </div>
+            </div>
+          </div>
+
+        <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=androidstudio"
+                />
+                <p class="title-tecnologie">Android Studio</p>
+                <p class="text-tecnologie">
+                  Conhecimento intermediario
+                </p>
+              </div>
+            </div>
+          </div>
+
+        <div class="splide__slide-">
+            <div class="card card-tecnologies">
+              <div class="card-body card-body-tecnologies">
+                <img
+                  class="img-tecnologies"
+                  src="https://go-skill-icons.vercel.app/api/icons?i=vscode"
+                />
+                <p class="title-tecnologie">VS Code</p>
+                <p class="text-tecnologie">
+                  Conhecimento intermediario
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-<style>
-    .company-logo {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-      margin-right: 10px;
-    }
-    .job-title {
-      font-weight: 600;
-    }
-    .dot {
-      height: 6px;
-      width: 6px;
-      background-color: #6c757d;
-      border-radius: 50%;
-      display: inline-block;
-      margin: 0 8px;
-    }
-  </style>
-        <!-- <img src="img/experiencia.png" class="img-experiencia" srcset=""> -->
     </section>
 
+    <section class="screen" id="experiencias">
+      <h1>Experiência</h1>
 
+      <div class="container py-4">
+        <div class="card shadow-sm" id="card-experiencias" style="color: #fff">
+          <div class="card-body">
+            <!-- IBM -->
+            <div
+              class="d-flex align-items-start mb-3"
+              style="position: relative"
+            >
+              <img src="./img/ibm_.jpeg" class="company-logo" alt="IBM" />
+
+              <div class="col-11">
+                <div class="job-title">IBM</div>
+                <div>Estágio · 9 m</div>
+                <div class="text-muted">Híbrida</div>
+
+                <!-- Consulting -->
+                <div class="mt-3" style="position: relative">
+                  <div class="bolinha"></div>
+                  <div class="linha-experiencia"></div>
+                  <div class="fw-semibold">Consulting</div>
+                  <div class="text-muted">
+                    jan de 2025 – o momento · 7 meses · São Paulo, Brasil
+                  </div>
+                  <div>
+                    Desenvolvedor na IBM Consulting trabalhando para empresas
+                    como a Petrobras
+                  </div>
+                </div>
+
+                <!-- Automation Developer -->
+                <div class="mt-3" style="position: relative">
+                  <div class="bolinha"></div>
+                  <div class="fw-semibold">Automation Developer</div>
+                  <div class="text-muted">
+                    nov de 2024 – jan de 2025 · 3 meses · São Paulo, Brasil
+                  </div>
+                  <div>
+                    Automação de teste para o produto Maximo da IBM focado no
+                    time de Inventory
+                  </div>
+                  <div class="text-muted small">
+                    🔹 IBM Maximo · Garantia de qualidade de software · +1
+                    competência
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paçoca -->
+            <div class="d-flex align-items-start mb-3">
+              <img src="./img/pacoca.jpeg" class="company-logo" alt="Paçoca" />
+              <div class="col-11">
+                <div class="job-title">Fundador</div>
+                <div class="text-muted">
+                  Paçoca · Tempo integral · nov de 2023 – o momento · 1 ano 9
+                  meses · São Paulo, Brasil
+                </div>
+                <div>
+                  Criei uma rede social:
+                  <a href="https://pacoca.net" target="_blank"
+                    >https://pacoca.net</a
+                  >
+                </div>
+                <div class="text-muted small">
+                  🔹 CI/CD · Laravel · +2 competências
+                </div>
+              </div>
+            </div>
+
+            <!-- Garçom -->
+            <div class="d-flex align-items-start mb-3">
+              <img src="./img/baixados.svg" class="company-logo" alt="Paçoca" />
+              <div class="col-11">
+                <div class="job-title">Garçom</div>
+                <div class="text-muted">
+                  Buffet Vision Feast · Freelancer · set de 2023 – o momento · 1
+                  ano 11 meses · São Paulo, Brasil · Presencial
+                </div>
+                <div>Trabalho como garçom em um Buffet de festa</div>
+                <div class="text-muted small">
+                  🔹 Relacionamento com clientes
+                </div>
+              </div>
+            </div>
+
+            <!-- DC Tecnologia -->
+            <div class="d-flex align-items-start mb-3">
+              <img
+                src="./img/dc.jpeg"
+                class="company-logo"
+                alt="DC TECNOLOGIA"
+              />
+              <div class="col-11">
+                <div class="job-title">Programador Júnior</div>
+                <div class="text-muted">
+                  DC TECNOLOGIA · Tempo integral · abr de 2024 – nov de 2024 · 8
+                  meses · São Paulo, Brasil · Remota
+                </div>
+                <div>
+                  Programação Web full-stack em Laravel e banco de dados, com
+                  alguns projetos em React.
+                </div>
+                <div class="text-muted small">
+                  🔹 Desenvolvimento web · Web design responsivo · +2
+                  competências
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .company-logo {
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+          margin-right: 10px;
+        }
+        .job-title {
+          font-weight: 600;
+        }
+        .dot {
+          height: 6px;
+          width: 6px;
+          background-color: #6c757d;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0 8px;
+        }
+      </style>
+      <!-- <img src="img/experiencia.png" class="img-experiencia" srcset=""> -->
+    </section>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>

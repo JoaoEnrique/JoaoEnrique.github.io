@@ -38,7 +38,37 @@ window.onload = function(){
       }
     });
   });
+
+
+  // calcula total de tempo na ibm com base na data de contratação
+  const dataInicioIBM = new Date(2024, 10, 18); //18/11/2024
+  const dataInicioTrabalhoAtualIBM = new Date(2025, 8, 22); //18/11/2024
+
+  // const timeDiff = Math.abs(dataInicioTrabalhoAtualIBM.getTime() - dataInicioIBM.getTime());
+  // const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+  // let result = "";
+
+  // if(diffDays < 30) result = `${diffDays} d`
+  // else if(diffDays >= 365) result = `${Math.round(diffDays / 365)} a`
+  // else if(diffDays >= 30) result = `${Math.round(diffDays / 30)} m`
+  
+  $("#total-tempo-ibm").html(diferencaData(dataInicioIBM, new Date()));
+  $("#total-tempo-atual-servico").html(diferencaData(dataInicioTrabalhoAtualIBM, new Date()));
+  
 };
+
+const diferencaData = (data1, data2) =>{
+  const timeDiff = Math.abs(data1.getTime() - data2.getTime());
+  const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+  if(diffDays < 30) 
+    return `${diffDays} d`;
+
+  if(diffDays >= 365) 
+    return `${Math.round(diffDays / 365)} a`;
+
+  if(diffDays >= 30) 
+    return `${Math.round(diffDays / 30)} m`;
+}
 
 
 
@@ -174,7 +204,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
 console.log('%cDesenvolvido pelo João Enrique', 'font-size: 30px; color: red;');
 console.log('%cwww.github.com/joaoenrique', 'font-size: 20px; color: red;');
+console.log('%chttps://pacoca.net', 'font-size: 20px; color: red;');

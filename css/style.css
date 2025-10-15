@@ -162,7 +162,7 @@ section {
 }
 
 
-#projetos, #sobre {
+#projetos, #sobre, #habilidades {
     padding-top: 50px;
 }
 
@@ -625,6 +625,11 @@ section {
         min-width: 250px !important;
     }
 
+    #tecnologias h1{
+        padding: 70px 20px 0px 20px !important;
+        text-align: center;
+    }
+
     #title span {
         font-size: 40px;
     }
@@ -650,7 +655,7 @@ section {
 
 
     #projetos, #sobre, #habilidades {
-        padding-top: 50px;
+        padding-top: 0px;
     }
 
     .navbar{
@@ -658,6 +663,16 @@ section {
         z-index: 9;
         left: 0;
         right: 0;
+    }
+
+    #card-experiencias{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    #card-experiencias .col-11{
+        padding-left: 10px;
     }
 
 }

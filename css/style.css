@@ -1,8 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --dark-color: #161616;
+    --bg-dark-transparent: #000000ad;
+}
 
 .navbar-brand {
     font-size: 30px !important;
     margin-left: 40px;
+}
+
+#name{
+    font-size: 5em;
+    font-family: "Montserrat", sans-serif;
+    /* color: #5bb4ff; */
+    margin: 0;
+    font-weight: 600;
+}
+
+.container-home{
+    padding: 100px 100px;
 }
 
 .navbar{
@@ -52,22 +70,23 @@ section {
 
 
 .wrapper {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at bottom, #161616 0%, #090a0f 100%);
     height: 100vh;
     overflow: hidden;
 }
 
 #title {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 0; */
+    /* right: 0; */
     color: #fff;
-    text-align: center;
-    transform: translateY(-50%);
-    padding-left: 10px;
+    /* text-align: center; */
+    /* transform: translateY(-50%); */
+    padding-left: -3px;
+    margin-top: 100px;
     width: 100%;
-    font-family: Lato;
+    /* font-family: Lato; */
 }
 
 .barra-escrita {
@@ -87,11 +106,14 @@ section {
 }
 
 
-#title span {
+#title striong {
     font-weight: 300;
     font-size: 50px;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     text-decoration: none !important;
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 5em; */
+    color: var(--secondary-color);
 }
 
 #title>.row {
@@ -99,15 +121,19 @@ section {
 }
 
 .col-name-home {
-    display: flex;
-    align-items: center !important;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center !important; */
+    /* justify-content: center; */
 }
 
 .col-img-home {
     justify-content: end;
     display: flex;
     /* background: blue; */
+}
+
+nav.bg-dark{
+    background-color: var(--dark-color)!important;
 }
 
 .img-home {
@@ -117,7 +143,7 @@ section {
     background-position: center;
     background-size: cover;
     border-radius: 50%;
-    background-color: #1b2735;
+    background-color: #161616;
     margin-right: 100px;
 }
 
@@ -129,17 +155,21 @@ section {
 }
 
 .div-name-home {
-    background: #1b2735;
+    background: #16161629;
     border-radius: 4px;
     width: 860px;
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.div-name-home p {
-    font-size: 20px;
+.div-name-home h1 {
+    /* font-size: 20px; */
+    font-size: 3m;
+    margin: 0;
+    margin-top: -5px;
+    margin-bottom: 50px;
 }
 
 .link-descer {
@@ -203,7 +233,7 @@ section {
 #sobre,
 #habilidades {
     /* background: #090a0f; */
-    background: #1b2735;
+    background: #161616;
     /* padding-top: 50px; */
 }
 
@@ -232,13 +262,13 @@ section {
 
 #tecnologias {
     /* background: #090a0f; */
-    background: #1b2735;
+    background: #161616;
     min-height: 100vh;
     padding-top: 20px;
 }
 
 #card-experiencias {
-    background: #1b2735;
+    background: #161616;
     padding-top: 20px;
     color: #fff !important;
 }
@@ -310,7 +340,7 @@ section {
     justify-content: center;
     padding: 50px;
     /* background: #090a0f!important; */
-    background: #1b2735 !important;
+    background: #161616 !important;
 }
 
 .card-experiencia {
@@ -320,12 +350,14 @@ section {
 }
 
 .card-sobre{
-    background: #1b2735!important;
+    background: var(--bg-dark-transparent)!important;
     color: #fff !important;
     height: 100% !important;
 }
 .text-sobre{
     margin-top: 20px;
+    font-size: 28px;
+    line-height: 40px;
     font-weight: normal!important;
 }
 
@@ -339,7 +371,7 @@ section {
 }
 
 .btn-experiencia {
-    background: #1b2735 !important;
+    background: #161616 !important;
     color: #d3d3d3 !important;
     opacity: .8;
     transition: 0.5s;
@@ -348,13 +380,17 @@ section {
 
 
 .btn-experiencia-video {
-    background: #1b2735 !important;
+    background: #161616 !important;
     color: #d3d3d3 !important;
     opacity: .8;
     transition: 0.5s;
     width: 290px;
 }
 
+.link-play-store img{
+    margin-top: -17px;
+    margin-bottom: -20px;
+}
 
 .descricao-img-carousel {
     position: absolute;
@@ -675,6 +711,36 @@ section {
         padding-left: 10px;
     }
 
+    .btn-experiencia{
+        width: 50%;
+    }
+
+    .link-play-store{
+        width: 50%;
+    }
+
+    .link-play-store img{
+        width: calc(100% + 10px);
+        margin-top: -10px;
+    }
+
+    .div-buttons{
+        display: flex;
+    }
+
+    /* .btn-experiencia{
+        width: 100%;
+    }
+
+    .link-play-store{
+        width: 100%;
+    }
+
+    .link-play-store img{
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+    } */
 }
 
 /* .carousel-item img, .card-experiencia video{
